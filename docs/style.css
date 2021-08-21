@@ -1,0 +1,26 @@
+body {
+  background-color: #CECEF6;
+  }
+h1   {
+  color: black;
+  background-color: #8258FA;
+  font-family: Verdana;
+  padding: 25px;
+  margin: -8px;
+  }
+p    {
+  color: black;
+  font-family: Helvetica
+  }
+  small {
+    color: grey;
+    background-color: #BE81F7;
+    padding: 25px;
+    margin: -8px;
+  }
+a:link {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  font-family: Helvetica;
+}
