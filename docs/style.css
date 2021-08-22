@@ -19,6 +19,11 @@ p    {
     margin: -8px;
   }
 a:link {
-  color: white;
+  color: black;
   font-family: Helvetica;
 }
+  a:hover {
+  color: lightgray;
+  font-family: Helvetica;
+}
+
