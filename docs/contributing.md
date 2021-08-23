@@ -15,7 +15,7 @@ Upload the file into the /projects folder of this repo (in a branch), and make a
 **First, check to make sure that the project hasn't already been backed up.**
 If it's already been backed up, go to the backup that already exists, start to rename it, and change the name to
 
-> /projects\*insert the numbers here\***/old**
+> /projects/\*insert the numbers here\***/old**
 
 Then, in the folder you just made, upload the new backup as "**new**". This way, people can look for a newer or older backup. Do not backup, more than 1 copy of a project, as that would be spam. Only the oldest and newest remain, and you can replace the newest one as much as you like. Be sure to add an index.html file to the folder, using the template, to allow people to quickly get their project.
 
