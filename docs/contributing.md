@@ -17,7 +17,7 @@ If it's already been backed up, go to the backup that already exists, start to r
 
 > /projects/\*insert the numbers here\***/old**
 
-Then, in the folder you just made, upload the new backup as "**new**". This way, people can look for a newer or older backup. Do not backup, more than 1 copy of a project, as that would be spam. Only the oldest and newest remain, and you can replace the newest one as much as you like. Be sure to add an index.html file to the folder, using the template, to allow people to quickly get their project.
+Then, in the folder you just made, upload the new backup as "**new**". This way, people can look for a newer or older backup. Do not backup, more than 1 copy of a project, as that would be spam. Only the oldest and newest remain, and you can replace the newest one as much as you like. Be sure to add [/templates/fork](this index.html file) to the folder, using the template, to allow people to quickly get their project.
 
 # Step Four: Find a rock
 Find a rock. Found one? Great. You're done.
