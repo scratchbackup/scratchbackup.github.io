@@ -21,9 +21,11 @@ p    {
 a:link {
   color: black;
   font-family: Helvetica;
+  text-decoration: none;
 }
   a:hover {
   color: lightgray;
   font-family: Helvetica;
+  text-decoration: none;
 }
 
