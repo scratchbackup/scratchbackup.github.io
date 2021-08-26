@@ -28,3 +28,8 @@ a:hover {
   font-family: Helvetica;
   text-decoration: none;
 }
+#bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
