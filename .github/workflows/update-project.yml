@@ -23,7 +23,7 @@ jobs:
       - name: Update projects
         run: |
           cd src
-          PROJECT_ID=${{ github.event.inputs.project-id }} node add-project.js
+          node update-project.js
 
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
