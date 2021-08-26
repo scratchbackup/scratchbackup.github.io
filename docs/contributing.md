@@ -1,4 +1,4 @@
-# Contributing
+# Contributing (outdated)
 
 Hello, collaborators! It's me, Scolder. If you ever want to archive some projects, i'll show you how.
 
