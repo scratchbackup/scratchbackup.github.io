@@ -1,0 +1,14 @@
+{
+  "name": "scratch-backup",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "backup": "cd src && node update-project"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.3.2"
+  }
+}
