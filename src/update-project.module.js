@@ -34,6 +34,10 @@ async function updateProject() {
       const projectJSON = await getJSON(
         `https://cdn.projects.scratch.mit.edu/${projectId}/`
       );
+
+      if (projectJSON.code) {
+        continue
+      }
       const projectAPIRes = await getJSON(
         `https://api.scratch.mit.edu/projects/${projectId}/`
       );
