@@ -1,31 +1,30 @@
 body {
-  background-color: #CECEF6;
-  }
-h1   {
+  background-color: #cecef6;
+}
+h1 {
   color: black;
-  background-color: #8258FA;
+  background-color: #8258fa;
   font-family: Verdana;
   padding: 25px;
   margin: -8px;
-  }
-p    {
+}
+p {
   color: black;
-  font-family: Helvetica
-  }
-  h4 {
-    color: grey;
-    background-color: #BE81F7;
-    padding: 25px;
-    margin: -8px;
-  }
+  font-family: Helvetica;
+}
+h4 {
+  color: grey;
+  background-color: #be81f7;
+  padding: 25px;
+  margin: -8px;
+}
 a:link {
   color: black;
   font-family: Helvetica;
   text-decoration: none;
 }
-  a:hover {
+a:hover {
   color: lightgray;
   font-family: Helvetica;
   text-decoration: none;
 }
-
