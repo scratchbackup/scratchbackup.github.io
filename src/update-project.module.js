@@ -47,7 +47,6 @@ async function updateProject() {
         `../projects/${projectId}/project.json`,
         prettier.format(JSON.stringify(projectJSON), { parser: "json" })
       );
-      console.log("formatting project", projectID, "/project.json");
       fs.writeFileSync(
         `../projects/${projectId}/api-res.json`,
         prettier.format(JSON.stringify(projectAPIRes), { parser: "json" })
