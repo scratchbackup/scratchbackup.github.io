@@ -67,7 +67,6 @@ async function updateProject() {
                     fs.mkdirSync(
                       `../projects/${projectId}/assets/${target.name}`
                     );
-                  
                   https
                     .request(
                       {
