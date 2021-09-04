@@ -30,4 +30,4 @@ jobs:
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Add new project :tada:(${{ github.events.inputs.project-id }})
+          commit_message: Add project ${{ github.events.inputs.project-id }}
