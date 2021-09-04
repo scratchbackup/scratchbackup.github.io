@@ -2,6 +2,7 @@ const https = require("https");
 const prettier = require("prettier");
 const fs = require("fs");
 
+console.log("begin.");
 function getJSON(url) {
   return new Promise((resolve, reject) => {
     const urlobj = new URL(url);
@@ -46,6 +47,7 @@ async function updateProject() {
         `../projects/${projectId}/project.json`,
         prettier.format(JSON.stringify(projectJSON), { parser: "json" })
       );
+      console.log("formatting ${projectID}/project.json");
       fs.writeFileSync(
         `../projects/${projectId}/api-res.json`,
         prettier.format(JSON.stringify(projectAPIRes), { parser: "json" })
@@ -65,7 +67,7 @@ async function updateProject() {
                     fs.mkdirSync(
                       `../projects/${projectId}/assets/${target.name}`
                     );
-                  console.log("making request...");
+                  
                   https
                     .request(
                       {
@@ -126,5 +128,5 @@ async function updateProject() {
     })
   );
 }
-
+console.log("complete.");
 module.exports = updateProject;
