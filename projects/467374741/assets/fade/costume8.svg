@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="481" height="361" viewBox="-0.5 -0.5 481 361">
+  <defs>
+    <linearGradient id="grad_1" x2="1">
+      <stop offset="0" stop-color="#173640" stop-opacity="0"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_2" y2="1" x2="0">
+      <stop offset="0" stop-color="#173640" stop-opacity="0"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="grad_3" x2="1">
+      <stop offset="0" stop-color="#173640" stop-opacity="1"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="grad_4" y2="1" x2="0">
+      <stop offset="0" stop-color="#173640" stop-opacity="1"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="0"/>
+    </linearGradient>
+  <linearGradient id="grad_1-.6463414430618286,0,0,1,169.75,0" x2="479.9939" x1="426.9939" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#173640" stop-opacity="0"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="1"/>
+    </linearGradient><linearGradient id="grad_2-,0,0,0.7464788556098938,0,91.25" y2="359.9824" x2="0" x1="0" y1="306.9824" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#173640" stop-opacity="0"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="1"/>
+    </linearGradient><linearGradient id="grad_3-.6309523582458496,0,0,1,0,0" x2="53" x1="0" y1="0" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#173640" stop-opacity="1"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="0"/>
+    </linearGradient><linearGradient id="grad_4-,0,0,0.6499999761581421,0,0" y2="52" x2="0" x1="0" y1="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#173640" stop-opacity="1"/>
+      <stop offset="1" stop-color="#173640" stop-opacity="0"/>
+    </linearGradient></defs>
+  <!-- Exported by Scratch - http://scratch.mit.edu/ -->
+  <g id="ID0.3193980068899691">
+    <g id="ID0.4789822935126722">
+      <path id="ID0.19316455721855164" fill="url(#grad_1-.6463414430618286,0,0,1,169.75,0)" stroke="none" d="M 426.9939 0 L 479.9939 0 L 479.9939 360 L 426.9939 360 L 426.9939 0 Z " stroke-width="0.8419493040021018"/>
+      <path id="ID0.5573353818617761" fill="url(#grad_2-,0,0,0.7464788556098938,0,91.25)" stroke="none" d="M 0 306.9824 L 480 306.9824 L 480 359.9824 L 0 359.9824 L 0 306.9824 Z " stroke-width="0.8823918295951795"/>
+    </g>
+    <g id="ID0.47291912976652384">
+      <path id="ID0.5592121100053191" fill="url(#grad_3-.6309523582458496,0,0,1,0,0)" stroke="none" d="M 0 0 L 53 0 L 53 360 L 0 360 L 0 0 Z " stroke-width="0.8360923628331977"/>
+      <path id="ID0.4557711728848517" fill="url(#grad_4-,0,0,0.6499999761581421,0,0)" stroke="none" d="M 0 0 L 480 0 L 480 52 L 0 52 L 0 0 Z " stroke-width="0.8433563804838335"/>
+    </g>
+  </g>
+</svg>
