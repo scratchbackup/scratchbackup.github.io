@@ -28,6 +28,11 @@ a:hover {
   font-family: Helvetica;
   text-decoration: none;
 }
+a:visited {
+  color: lightgray;
+  font-family: Helvetica;
+  text-decoration: none;
+}
 #bottom {
   position: center;
   bottom: 0;
