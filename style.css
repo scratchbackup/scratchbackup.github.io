@@ -38,3 +38,7 @@ a:visited {
   bottom: 0;
   left: 0;
 }
+a:active {
+  color: white;
+  font-family: Helvetica;
+}
