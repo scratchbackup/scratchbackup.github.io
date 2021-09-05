@@ -25,12 +25,11 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: lightgray;
+  color: black;
   font-family: Helvetica;
-  text-decoration: none;
 }
 a:visited {
-  color: lightgray;
+  color: slategray;
   font-family: Helvetica;
   text-decoration: none;
 }
@@ -40,6 +39,6 @@ a:visited {
   left: 0;
 }
 a:active {
-  color: white;
+  color: purple;
   font-family: Helvetica;
 }
