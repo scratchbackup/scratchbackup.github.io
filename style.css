@@ -34,9 +34,8 @@ a:visited {
   text-decoration: none;
 }
 #bottom {
-  position: center;
+  position: fixed;
   bottom: 0;
-  left: 0;
 }
 a:active {
   color: purple;
