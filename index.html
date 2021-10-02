@@ -11,6 +11,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <meta class="v" name="viewport" content="width=, initial-scale=1.0">
     <title>ScratchBackup</title>
   </head>
     <body>
@@ -25,3 +26,7 @@
         <footer><h4><small><div id="bottom">Scratch is developed by the Lifelong Kindergarten Group at the MIT Media Lab. See <a href=http://scratch.mit.edu>the scratch website.</a></div><pre></pre></h4></footer>
   </body>
 </html>
+<script>
+const x = document.querySelectorAll("meta.v");
+x.innerHTML = "<meta class="v" name="viewport" content="width=" + screen.availWidth + ", initial-scale=1.0">";
+</script>
