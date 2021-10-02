@@ -13,23 +13,24 @@ p {
   font-family: Helvetica;
 }
 a:link {
-  color: black;
+  color: violet;
   font-family: Helvetica;
   text-decoration: none;
 }
 a:hover {
-  color: black;
+  color: blue;
   font-family: Helvetica;
 }
 a:visited {
-  color: black;
+  color: violet;
   font-family: Helvetica;
   text-decoration: none;
 }
 #bottom {
   position: fixed;
   bottom: 0;
-  color: grey;
+  right: 0;
+  color: black;
   background-color: #be81f7;
   padding: 25px;
   margin: -8px;
