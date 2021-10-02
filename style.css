@@ -12,13 +12,6 @@ p {
   color: black;
   font-family: Helvetica;
 }
-h4 {
-  color: grey;
-  background-color: #be81f7;
-  padding: 25px;
-  margin: -8px;
-  text-align: center;
-}
 a:link {
   color: black;
   font-family: Helvetica;
@@ -36,6 +29,11 @@ a:visited {
 #bottom {
   position: fixed;
   bottom: 0;
+  color: grey;
+  background-color: #be81f7;
+  padding: 25px;
+  margin: -8px;
+  text-align: center;
 }
 a:active {
   color: purple;
