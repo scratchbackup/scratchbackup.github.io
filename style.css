@@ -47,4 +47,5 @@ button {
   background-color: blue;
   display: inline-block;
   border: none;
+  padding: 15px 25px;
 }
