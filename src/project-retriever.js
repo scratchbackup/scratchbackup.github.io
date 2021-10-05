@@ -25,3 +25,21 @@ function getJSON(url) {
       .end();
   });
 }
+
+const projects = JSON.parse(fs.readFileSync("projects.json").toString());
+
+async function updateProject() {
+  for (let project of projects) {
+    await Promise.all(
+    projects.map(async (projectId) => {
+      console.log("found project ", projectId);
+      const req = https
+      const projectLINK = 
+        `https://scratchbackup.github.io/projects/${projectId}/project.json`
+      ;
+
+      const projectTHUMB = await getJSON(
+        `https://scratchbackup.github.io/projects/${projectId}/thumbnail.png`
+      );
+  }
+}
