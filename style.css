@@ -41,3 +41,8 @@ a:active {
   color: purple;
   font-family: Helvetica;
 }
+.button {
+  border-radius: 25px;
+  color: white;
+  background-color: blue;
+}
