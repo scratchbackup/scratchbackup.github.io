@@ -52,43 +52,6 @@ async function updateProject() {
         prettier.format(JSON.stringify(projectAPIRes), { parser: "json" })
       );
 
-      !fs.existsSync(`../projects/${projectId}/assets`) &&
-        fs.mkdirSync(`../projects/${projectId}/assets`);
-      await Promise.all(
-        projectJSON.targets.map((target) =>
-          Promise.all(
-            target.costumes.map(
-              async (costume) =>
-                new Promise((resolve) => {
-                  !fs.existsSync(
-                    `../projects/${projectId}/assets/${target.name}`
-                  ) &&
-                    fs.mkdirSync(
-                      `../projects/${projectId}/assets/${target.name}`
-                    );
-                  https
-                    .request(
-                      {
-                        hostname: "cdn.assets.scratch.mit.edu",
-                        port: 443,
-                        path: `/internalapi/asset/${costume.md5ext}/get/`,
-                        method: "GET",
-                      },
-                      (res) => {
-                        res.pipe(
-                          fs.createWriteStream(
-                            `../projects/${projectId}/assets/${target.name}/${costume.name}.${costume.dataFormat}`
-                          )
-                        );
-                      }
-                    )
-                    .end();
-                })
-            )
-          )
-        )
-      );
-
       const writeStream = fs.createWriteStream(
         `../projects/${projectId}/project.sb3`
       );
