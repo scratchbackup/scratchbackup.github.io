@@ -42,7 +42,9 @@ a:active {
   font-family: Helvetica;
 }
 button {
-  border-radius: 25px;
+  border-radius: 20px;
   color: white;
   background-color: blue;
+  display: inline-block;
+  border: none;
 }
