@@ -52,6 +52,10 @@ async function updateProject() {
         prettier.format(JSON.stringify(projectAPIRes), { parser: "json" })
       );
 
+      const writeStream = fs.createWriteStream(
+        `../projects/${projectId}/project.sb3`
+      );
+
       await new Promise((resolve) => {
         https
           .request(
