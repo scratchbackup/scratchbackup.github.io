@@ -49,3 +49,11 @@ button {
   border: none;
   padding: 15px 25px;
 }
+iframe {
+  border: none;
+  width: auto;
+  color: #cecef6;
+}
+q {
+  color: black;
+}
