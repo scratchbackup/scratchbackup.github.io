@@ -1,3 +1,4 @@
+@import resources/scripts/footermodule
 body {
   background-color: #cecef6;
 }
@@ -26,16 +27,6 @@ a:visited {
   color: violet;
   font-family: Helvetica;
   text-decoration: none;
-}
-#bottom {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  color: black;
-  background-color: #be81f7;
-  padding: 25px;
-  margin: -8px;
-  text-align: center;
 }
 a:active {
   color: purple;
