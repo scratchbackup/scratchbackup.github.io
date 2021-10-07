@@ -1,11 +1,2 @@
-document.getElementById("favihead").innerHTML = "<link rel='stylesheet' href='https://scratchbackup.github.io/style.css'>",
-    "<link rel='apple-touch-icon' sizes='180x180' href='https://scratchbackup.github.io/resources/favicons/apple-touch-icon.png'>",
-    "<link rel='icon' type='image/png' sizes='32x32' href='https://scratchbackup.github.io/resources/favicons/favicon-32x32.png'>",
-    "<link rel='icon' type='image/png' sizes='16x16' href='https://scratchbackup.github.io/resources/favicons/favicon-16x16.png'>",
-    "<link rel='manifest' href='https://scratchbackup.github.io/resources/favicons/site.webmanifest'>,
-    "<link rel='mask-icon' href='https://scratchbackup.github.io/resources/favicons/safari-pinned-tab.svg' color='#5bbad5'>",
-    "<link rel='shortcut icon' href='https://scratchbackup.github.io/resources/favicons/favicon.ico'>",
-    "<meta name='msapplication-TileColor' content='#da532c'>",
-    "<meta name='msapplication-config' content='https://scratchbackup.github.io/resources/favicons/browserconfig.xml'>",
-    "<meta name='theme-color' content='#ffffff'>",
-    "<meta class='v' name='viewport' content='width=device-width', initial-scale=1.0'>";
+fetch("https://scratchbackup.github.io/resources/other/sitedep.txt").then((r)=>{r.text().then((d)=>{var CONTENT = d})})
+document.getElementById("favihead").innerHTML = CONTENT
