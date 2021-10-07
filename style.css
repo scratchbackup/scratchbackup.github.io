@@ -1,4 +1,4 @@
-@import(resources/scripts/footermodule)
+@import url(https://scratchbackup.github.io/resources/scripts/footermodule)
 body {
   background-color: #cecef6;
 }
