@@ -1,0 +1,10 @@
+#bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: black;
+  background-color: #be81f7;
+  padding: 25px;
+  margin: -8px;
+  text-align: center;
+}
