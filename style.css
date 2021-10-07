@@ -1,4 +1,4 @@
-@import resources/scripts/footermodule
+@import(resources/scripts/footermodule)
 body {
   background-color: #cecef6;
 }
