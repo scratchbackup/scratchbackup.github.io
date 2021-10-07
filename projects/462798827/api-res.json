@@ -5,7 +5,7 @@
   "instructions": "Paddler is watching fireworks for the 4th of July, but something goes wrong...\n\nFor this animation, there is a new outro. Tell me what you think of it in the comments!\n\nHappy 4th of July everyone!\n\nLinks to projects in outro:\nNew Years: https://scratch.mit.edu/projects/467706673/\nRemotes: https://scratch.mit.edu/projects/475928541/\n\nCredits:\nflamingtext.com\nGoogle for thumbnail background and for flag\nScratch and YouTube for sounds\nThe Green Orbs for music\nSonic for outro music\nAnd you for watching!",
   "visibility": "visible",
   "public": true,
-  "comments_allowed": true,
+  "comments_allowed": false,
   "is_published": true,
   "author": {
     "id": 8071284,
@@ -25,18 +25,18 @@
   },
   "image": "https://cdn2.scratch.mit.edu/get_image/project/462798827_480x360.png",
   "images": {
-    "282x218": "https://cdn2.scratch.mit.edu/get_image/project/462798827_282x218.png?v=1632604051",
-    "216x163": "https://cdn2.scratch.mit.edu/get_image/project/462798827_216x163.png?v=1632604051",
-    "200x200": "https://cdn2.scratch.mit.edu/get_image/project/462798827_200x200.png?v=1632604051",
-    "144x108": "https://cdn2.scratch.mit.edu/get_image/project/462798827_144x108.png?v=1632604051",
-    "135x102": "https://cdn2.scratch.mit.edu/get_image/project/462798827_135x102.png?v=1632604051",
-    "100x80": "https://cdn2.scratch.mit.edu/get_image/project/462798827_100x80.png?v=1632604051"
+    "282x218": "https://cdn2.scratch.mit.edu/get_image/project/462798827_282x218.png?v=1633618702",
+    "216x163": "https://cdn2.scratch.mit.edu/get_image/project/462798827_216x163.png?v=1633618702",
+    "200x200": "https://cdn2.scratch.mit.edu/get_image/project/462798827_200x200.png?v=1633618702",
+    "144x108": "https://cdn2.scratch.mit.edu/get_image/project/462798827_144x108.png?v=1633618702",
+    "135x102": "https://cdn2.scratch.mit.edu/get_image/project/462798827_135x102.png?v=1633618702",
+    "100x80": "https://cdn2.scratch.mit.edu/get_image/project/462798827_100x80.png?v=1633618702"
   },
   "history": {
     "created": "2020-12-12T01:42:17.000Z",
-    "modified": "2021-09-25T21:07:31.000Z",
+    "modified": "2021-10-07T14:58:22.000Z",
     "shared": "2021-07-05T03:24:32.000Z"
   },
-  "stats": { "views": 15898, "loves": 916, "favorites": 686, "remixes": 41 },
+  "stats": { "views": 15899, "loves": 916, "favorites": 686, "remixes": 41 },
   "remix": { "parent": null, "root": null }
 }
