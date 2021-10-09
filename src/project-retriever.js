@@ -12,7 +12,7 @@ xhttp.onload = function() {
 xhttp.open("GET", "/src/projects.json");
 xhttp.send();
 const thumblists = [];
-  
+
 const links = [];
 for (let projectID of projects) {
   var projectthumburl = new URL("https://scratchbackup.github.io/projects/" + projectID + "/thumbnail.png");
@@ -22,9 +22,9 @@ for (let projectID of projects) {
 }
 var indexx = 0;
 for (let link of links) {
-  var indexx += 1
+  var indexx += 1;
   document.appendChild("<a href=" + link + " id='project" + indexx + "link'>");
-  ddocument.appendChild("<img src='" + thumblists[indexx] + "' id= 'project" + indexx + "thumb'>");
+  ddocument.appendChild("<img src='" + thumblists[indexx] + "' id='project" + indexx + "thumb' width="240" height="180>");
   document.appendChild("</img></a><br>");
+}
 console.log("complete");
-
