@@ -24,7 +24,7 @@ var indexx = 0;
 for (let link of links) {
   var indexx += 1;
   document.appendChild("<a href=" + link + " id='project" + indexx + "link'>");
-  ddocument.appendChild("<img src='" + thumblists[indexx] + "' id='project" + indexx + "thumb' width="240" height="180>");
+  ddocument.appendChild("<img src='" + thumblists[indexx] + "' id='project" + indexx + "thumb' width='240' height='180'>");
   document.appendChild("</img></a><br>");
 }
 console.log("complete");
