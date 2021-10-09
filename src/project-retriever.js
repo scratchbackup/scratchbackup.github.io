@@ -9,7 +9,7 @@ xhttp.onload = function() {
 }
 
 // Send a request
-xhttp.open("GET", "src/projects.json");
+xhttp.open("GET", "/src/projects.json");
 xhttp.send();
 const thumblists = [];
   
@@ -23,12 +23,8 @@ for (let projectID of projects) {
 var indexx = 0;
 for (let link of links) {
   var indexx += 1
-  document.getElementById("project" + indexx + "link").href = link;
-}
-var indexx = 0;
-for (let thumb of thumblists) {
-  var indexx += 1
-  document.getElementById("project" + indexx + "thumb").src = thumb;
-}
+  document.createElement("<a href=" + link + " id='project" + indexx + "link'>");
+  ddocument.createElement("<img src='" + thumblists[indexx] + "' id= 'project" + indexx + "thumb'>");
+  document.createElement("</img></a><br>");
 console.log("complete");
 
