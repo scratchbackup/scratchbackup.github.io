@@ -1,7 +1,7 @@
 #bottom {
   position: fixed;
   bottom: 0;
-  right: 0;
+  width: 100%;
   color: black;
   background-color: #be81f7;
   padding: 25px;
