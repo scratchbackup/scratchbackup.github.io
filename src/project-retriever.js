@@ -23,8 +23,8 @@ for (let projectID of projects) {
 var indexx = 0;
 for (let link of links) {
   var indexx += 1
-  document.createElement("<a href=" + link + " id='project" + indexx + "link'>");
-  ddocument.createElement("<img src='" + thumblists[indexx] + "' id= 'project" + indexx + "thumb'>");
-  document.createElement("</img></a><br>");
+  document.appendChild("<a href=" + link + " id='project" + indexx + "link'>");
+  ddocument.appendChild("<img src='" + thumblists[indexx] + "' id= 'project" + indexx + "thumb'>");
+  document.appendChild("</img></a><br>");
 console.log("complete");
 
