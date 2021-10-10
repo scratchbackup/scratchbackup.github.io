@@ -27,6 +27,13 @@ class App extends Component {
   }
 
   render() {
+    const projects = this.state.projects
+      .filter((project) =>
+        project.title
+          .toLowerCase()
+          .includes(this.state.nameSearch.toLowerCase())
+      )
+
     return (
       <Layout>
         <Header>ScratchBackup</Header>
@@ -93,11 +100,16 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.projects
-                  .filter((project) =>
-                    project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase())
-                  )
-                  .map((project) => {
+                {projects.length === 0 && (
+                  <tr>
+                    <td colSpan="6">
+                      There are no results to your search query. Consider
+                      broadening your search.
+                    </td>
+                  </tr>
+                )}
+                {
+                  projects.map((project) => {
                     const created = new Date(project.created);
                     const modified = new Date(project.modified);
 
