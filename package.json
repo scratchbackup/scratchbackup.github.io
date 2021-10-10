@@ -3,12 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "backup": "cd src && node update-project"
+    "add-project": "node ./scripts/add-project.js",
+    "update-projects": "node ./scripts/update-projects.js",
+    "build": "webpack",
+    "serve": "webpack serve"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "prettier": "^2.3.2"
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.4.0",
+    "node-fetch": "2.6.5",
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
   }
 }

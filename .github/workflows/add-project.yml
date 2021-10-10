@@ -24,10 +24,15 @@ jobs:
 
       - name: Run add-project.js
         run: |
-          cd src
-          PROJECT_ID=${{ github.event.inputs.project-id }} node add-project.js
+          yarn add-project ${{ github.event.inputs.project-id }}
 
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+        if: github.ref == 'refs/heads/master'
+        
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Add project ${{ github.events.inputs.project-id }}
+          commit_message: Attach project ${{ github.events.inputs.project-id }} to listener
