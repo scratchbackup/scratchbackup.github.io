@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Container } from "./components/Container";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
@@ -97,17 +96,17 @@ class App extends Component {
                       <td>
                         <div className="actions">
                           {project.version === "1.4" ? (
-                            <a href={`/projects/${project.id}/project.sb`} target="_blank">
+                            <a href={`projects/${project.id}/project.sb`} target="_blank">
                               project.sb
                             </a>
                           ) : (
-                            <a href={`/projects/${project.id}/project.json`} target="_blank">
+                            <a href={`projects/${project.id}/project.json`} target="_blank">
                               project.json
                             </a>
                           )}
                           {project.version === "2.0" && (
                             <a
-                              href={`/projects/${project.id}/project.json`}
+                              href={`projects/${project.id}/project.json`}
                               download="project.sb2"
                               target="_blank"
                             >
@@ -116,7 +115,7 @@ class App extends Component {
                           )}
                           {project.version === "3.0" && (
                             <a
-                              href={`/projects/${project.id}/project.json`}
+                              href={`projects/${project.id}/project.json`}
                               download="project.sb3"
                               target="_blank"
                             >
@@ -133,7 +132,7 @@ class App extends Component {
                           >
                             View in Scratch
                           </a>
-                          <a href={`/projects/${project.id}/api-res.json`} target="_blank">
+                          <a href={`projects/${project.id}/api-res.json`} target="_blank">
                             View full metadata
                           </a>
                         </div>
