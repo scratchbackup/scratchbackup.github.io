@@ -35,4 +35,4 @@ jobs:
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Attach project ${{ github.events.inputs.project-id }} to listener
+          commit_message: Start listening to ${{ github.event.inputs.project-id }}
