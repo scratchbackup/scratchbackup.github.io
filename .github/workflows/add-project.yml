@@ -30,7 +30,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
