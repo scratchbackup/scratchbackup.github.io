@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("/projects.json")
+    fetch("projects.json")
       .then((res) => res.json())
       .then((data) => {
         this.setState({
