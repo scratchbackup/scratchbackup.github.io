@@ -11,6 +11,7 @@ class App extends Component {
     this.state = {
       projects: [],
       loading: true,
+      nameSearch: "",
     };
   }
 
@@ -47,8 +48,8 @@ class App extends Component {
 
           <p>
             Restoring your previous project should be as easy as redownloading
-            the project as a ".sb", ".sb2" or ".sb3" file and importing it
-            into Scratch.
+            the project as a ".sb", ".sb2" or ".sb3" file and importing it into
+            Scratch.
           </p>
 
           <h3>How do I get signed up?</h3>
@@ -61,6 +62,21 @@ class App extends Component {
           </p>
 
           <h2>Projects</h2>
+
+          <h3>Search Options</h3>
+          <div className="form">
+            <div className="form-item">
+              <label htmlFor="name">Name of Project</label>
+              <input
+                name="name"
+                placeholder="Enter a name of a project to search for"
+                value={this.state.nameSearch}
+                onChange={(e) => this.setState({ nameSearch: e.target.value })}
+              ></input>
+            </div>
+          </div>
+
+          <h3>Results</h3>
 
           {this.state.loading ? (
             <p>Loading...</p>
@@ -77,69 +93,82 @@ class App extends Component {
                 </tr>
               </thead>
               <tbody>
-                {this.state.projects.map((project) => {
-                  const created = new Date(project.created);
-                  const modified = new Date(project.modified);
+                {this.state.projects
+                  .filter((project) =>
+                    project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase())
+                  )
+                  .map((project) => {
+                    const created = new Date(project.created);
+                    const modified = new Date(project.modified);
 
-                  return (
-                    <tr key={project.id}>
-                      <td>{project.id}</td>
-                      <td>{project.title}</td>
-                      <td>
-                        {created.toLocaleDateString()}{" "}
-                        {created.toLocaleTimeString()}
-                      </td>
-                      <td>
-                        {modified.toLocaleDateString()}{" "}
-                        {modified.toLocaleTimeString()}
-                      </td>
-                      <td>
-                        <div className="actions">
-                          {project.version === "1.4" ? (
-                            <a href={`projects/${project.id}/project.sb`} target="_blank">
-                              project.sb
-                            </a>
-                          ) : (
-                            <a href={`projects/${project.id}/project.json`} target="_blank">
-                              project.json
-                            </a>
-                          )}
-                          {project.version === "2.0" && (
+                    return (
+                      <tr key={project.id}>
+                        <td>{project.id}</td>
+                        <td>{project.title}</td>
+                        <td>
+                          {created.toLocaleDateString()}{" "}
+                          {created.toLocaleTimeString()}
+                        </td>
+                        <td>
+                          {modified.toLocaleDateString()}{" "}
+                          {modified.toLocaleTimeString()}
+                        </td>
+                        <td>
+                          <div className="actions">
+                            {project.version === "1.4" ? (
+                              <a
+                                href={`projects/${project.id}/project.sb`}
+                                target="_blank"
+                              >
+                                project.sb
+                              </a>
+                            ) : (
+                              <a
+                                href={`projects/${project.id}/project.json`}
+                                target="_blank"
+                              >
+                                project.json
+                              </a>
+                            )}
+                            {project.version === "2.0" && (
+                              <a
+                                href={`projects/${project.id}/project.json`}
+                                download="project.sb2"
+                                target="_blank"
+                              >
+                                (as .sb2)
+                              </a>
+                            )}
+                            {project.version === "3.0" && (
+                              <a
+                                href={`projects/${project.id}/project.json`}
+                                download="project.sb3"
+                                target="_blank"
+                              >
+                                (as .sb3)
+                              </a>
+                            )}
+                          </div>
+                        </td>
+                        <td>
+                          <div className="actions">
                             <a
-                              href={`projects/${project.id}/project.json`}
-                              download="project.sb2"
+                              href={`https://scratch.mit.edu/projects/${project.id}/`}
                               target="_blank"
                             >
-                              (as .sb2)
+                              View in Scratch
                             </a>
-                          )}
-                          {project.version === "3.0" && (
                             <a
-                              href={`projects/${project.id}/project.json`}
-                              download="project.sb3"
+                              href={`projects/${project.id}/api-res.json`}
                               target="_blank"
                             >
-                              (as .sb3)
+                              View full metadata
                             </a>
-                          )}
-                        </div>
-                      </td>
-                      <td>
-                        <div className="actions">
-                          <a
-                            href={`https://scratch.mit.edu/projects/${project.id}/`}
-                            target="_blank"
-                          >
-                            View in Scratch
-                          </a>
-                          <a href={`projects/${project.id}/api-res.json`} target="_blank">
-                            View full metadata
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
               </tbody>
             </table>
           )}
