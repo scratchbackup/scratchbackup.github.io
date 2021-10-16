@@ -22,10 +22,14 @@ jobs:
 
       - name: Update projects
         run: |
-          cd src
-          node update-project.js
+          yarn update-projects
 
-      - name: Commit
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Build Website
+        run: |
+          yarn build
+
+      - uses: peaceiris/actions-gh-pages@v3
         with:
-          commit_message: Update projects
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+        if: github.ref == 'refs/heads/main'
