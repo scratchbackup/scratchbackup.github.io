@@ -55,7 +55,7 @@ class App extends Component {
 
           <p>
             Restoring your previous project should be as easy as redownloading
-            the project as a ".sb", ".sb2" or ".sb3" file and importing it into
+            the project as a ".sb", ".json" or ".sbcomp" file and importing it into
             Scratch.
           </p>
 
@@ -67,7 +67,9 @@ class App extends Component {
             </a>{" "}
             that you can fill out.
           </p>
-
+          <h3>What is the .sbcomp format?</h3>
+          <p>.sbcomp is a custom file extension name that stands for "Scratch Binary Compression", so you don't accidentally open your file in a different application. You can still upload the file to a Scratch online editor, and all your project's code and assets will be there.
+          </p>
           <h2>Projects</h2>
 
           <h3>Search Options</h3>
@@ -130,14 +132,14 @@ class App extends Component {
                             {project.version === "1.4" ? (
                               <a
                                 href={`projects/${project.id}/project.sb`}
-                                target="_blank"
+                                target="_blank" download=`${project.id}.sb`
                               >
                                 project.sb
                               </a>
                             ) : (
                               <a
                                 href={`projects/${project.id}/project.json`}
-                                target="_blank"
+                                target="_blank" download={`${project.id}.json`}
                               >
                                 project.json
                               </a>
@@ -145,19 +147,19 @@ class App extends Component {
                             {project.version === "2.0" && (
                               <a
                                 href={`projects/${project.id}/project.json`}
-                                download="project.sb2"
+                                download={`${project.id}.sbcomp`}
                                 target="_blank"
                               >
-                                (as .sb2)
+                                (as .sbcomp)
                               </a>
                             )}
                             {project.version === "3.0" && (
                               <a
                                 href={`projects/${project.id}/project.json`}
-                                download="project.sb3"
+                                download={`${project.id}.sbcomp`}
                                 target="_blank"
                               >
-                                (as .sb3)
+                                (as .sbcomp)
                               </a>
                             )}
                           </div>
