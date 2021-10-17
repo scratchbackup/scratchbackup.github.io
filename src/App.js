@@ -132,7 +132,7 @@ class App extends Component {
                             {project.version === "1.4" ? (
                               <a
                                 href={`projects/${project.id}/project.sb`}
-                                target="_blank" download=`${project.id}.sb`
+                                target="_blank" download={`${project.id}.sb`}
                               >
                                 project.sb
                               </a>
