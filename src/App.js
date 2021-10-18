@@ -59,7 +59,7 @@ class App extends Component {
             Scratch.
           </p>
 
-          <h3>How do I get signed up?</h3>
+          <h3>How do I get my project added?</h3>
           <p>
             We have a{" "}
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScMXAtkgyMDAWvrDvLAg6D0elCOWg1mrBEFsi1AcwtE0zD3vw/viewform">
@@ -80,6 +80,7 @@ class App extends Component {
                 name="name"
                 placeholder="Enter a name of a project to search for"
                 value={this.state.nameSearch}
+                type="search"
                 onChange={(e) => this.setState({ nameSearch: e.target.value })}
               ></input>
             </div>
