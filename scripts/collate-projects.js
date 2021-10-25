@@ -14,6 +14,7 @@ const collateProjects = () => {
     if (fs.existsSync(jsonLocation)) {
       const file = fs.readFileSync(jsonLocation, { encoding: 'utf-8' })
       jsons.push(JSON.parse(file))
+      jsons.sort(function(a, b){return a - b})
     }
   }
 
