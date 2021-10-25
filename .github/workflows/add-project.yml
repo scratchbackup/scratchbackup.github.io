@@ -32,6 +32,10 @@ jobs:
           publish_dir: ./dist
         if: github.ref == 'refs/heads/main'
         
+      - name: Build Website
+        run: |
+          yarn build
+      
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
