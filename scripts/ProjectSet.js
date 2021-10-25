@@ -31,7 +31,8 @@ class ProjectSet {
   }
 
   add(id) {
-    this.projectSet.add(id)
+    this.projectSet.add(id);
+    this.projectSet.sort(function(a, b){return a - b})
   }
 
   save() {
