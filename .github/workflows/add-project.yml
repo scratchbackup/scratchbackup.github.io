@@ -40,3 +40,33 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Start listening to ${{ github.event.inputs.project-id }}
+  
+  add-project:
+    name: Update Projects
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Update projects
+        run: |
+          yarn update-projects
+
+      - name: Build Website
+        run: |
+          yarn build
+
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+        if: github.ref == 'refs/heads/main'
+
