@@ -148,19 +148,17 @@ class App extends Component {
                             {project.version === "2.0" && (
                               <a
                                 href={`projects/${project.id}/project.json`}
-                                download={`${project.id}.sbcomp`}
+                                download={`${project.id}.json`}
                                 target="_blank"
                               >
-                                (as .sbcomp)
                               </a>
                             )}
                             {project.version === "3.0" && (
                               <a
                                 href={`projects/${project.id}/project.json`}
-                                download={`${project.id}.sbcomp`}
+                                download={`${project.id}.json`}
                                 target="_blank"
                               >
-                                (as .sbcomp)
                               </a>
                             )}
                           </div>
