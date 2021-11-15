@@ -89,7 +89,7 @@ class App extends Component {
             </div>
             <div className="form-item">
                 <label htmlFor="showID">Show Project ID</label>
-                <input type="checkbox" name="showID"></input>
+                <input type="checkbox" name="showID" onChange={(e) => this.setState({ showIDpref: e.target.value })}></input></div>
           </div>
 
           <h3>Results</h3>
