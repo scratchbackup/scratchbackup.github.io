@@ -6,6 +6,7 @@ import { Main } from "./components/Main";
 function preventTags(str) {
     return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
 }
+var showID = true
 class App extends Component {
   constructor(props) {
     super(props);
@@ -86,6 +87,9 @@ class App extends Component {
                 onChange={(e) => this.setState({ nameSearch: e.target.value })}
               ></input>
             </div>
+            <div className="form-item">
+                <label htmlFor="showID">Show Project ID</label>
+                <input type="checkbox" name="showID"></input>
           </div>
 
           <h3>Results</h3>
@@ -96,7 +100,7 @@ class App extends Component {
             <table class="table">
               <thead>
                 <tr>
-                  <th>ID</th>
+                  <th>{showID ? "ID" : "-"}</th>
                   <th>Name</th>
                   <th>Created</th>
                   <th>Modified</th>
@@ -120,8 +124,8 @@ class App extends Component {
 
                     return (
                       <tr key={project.id}>
-                        <td>{project.id}</td>
-                        <td>{preventTags(project.title)}</td>
+                        <td>{showID ? project.id : "-"}</td>
+                        <td>{project.title}</td>
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
