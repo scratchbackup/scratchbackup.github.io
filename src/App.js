@@ -3,7 +3,9 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
 import { Main } from "./components/Main";
-
+function preventTags(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
+}
 class App extends Component {
   constructor(props) {
     super(props);
@@ -119,7 +121,7 @@ class App extends Component {
                     return (
                       <tr key={project.id}>
                         <td>{project.id}</td>
-                        <td>{project.title}</td>
+                        <td>{preventTags(project.title)}</td>
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
