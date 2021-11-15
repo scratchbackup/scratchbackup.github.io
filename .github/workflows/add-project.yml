@@ -41,7 +41,7 @@ jobs:
         with:
           commit_message: Start listening to ${{ github.event.inputs.project-id }}
   
-  add-project:
+  update-project:
     name: Update Projects
     runs-on: ubuntu-latest
     steps:
