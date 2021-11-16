@@ -137,7 +137,7 @@ class App extends Component {
                         <td>
                           <div className="actions">
                             {project.version === "1.4" ? (
-                              <a
+                              <a rel="noopener noreferrer"
                                 href={`projects/${project.id}/project.sb`}
                                 target="_blank" download={`${project.id}.sb`}
                               >
