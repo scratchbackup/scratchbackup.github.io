@@ -63,13 +63,13 @@ class App extends Component {
           </p>
 
           <h3>How do I get my project added?</h3>
-          <p>
+          <!-- <p>
             We have a{" "}
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScMXAtkgyMDAWvrDvLAg6D0elCOWg1mrBEFsi1AcwtE0zD3vw/viewform">
               web form
             </a>{" "}
             that you can fill out.
-          </p>
+          </p> --->
           <h3>What is the .sbcomp format?</h3>
           <p>.sbcomp is a custom file extension name that stands for "Scratch Binary Compression", so you don't accidentally open your file in a different application. You can still upload the file to a Scratch online editor, and all your project's code and assets will be there.
           </p>
