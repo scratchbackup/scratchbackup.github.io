@@ -98,6 +98,7 @@ class App extends Component {
                 <tr>
                   <th>{showID ? "ID" : "-"}</th>
                   <th>Name</th>
+                  <th>Creator</th>
                   <th>Created</th>
                   <th>Modified</th>
                   <th>Project File</th>
@@ -117,11 +118,13 @@ class App extends Component {
                   projects.map((project) => {
                     const created = new Date(project.created);
                     const modified = new Date(project.modified);
+                    const author = project.author;
 
                     return (
                       <tr key={project.id}>
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
+                        <td>{project.author}</td>
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
