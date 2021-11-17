@@ -98,6 +98,7 @@ const saveProject = async (id) => {
       {
         id: metadata.id,
         title: metadata.title,
+        author: metadata.author.username,
         created: metadata.history.created,
         modified: metadata.history.modified,
         version,
