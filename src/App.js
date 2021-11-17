@@ -133,7 +133,7 @@ class App extends Component {
                                 project.sb
                               </a>
                             ) : (
-                              <a
+                              <a rel="noopener noreferrer"
                                 href={`projects/${project.id}/project.json`}
                                 target="_blank" download={`${project.id}.json`}
                               >
@@ -141,7 +141,7 @@ class App extends Component {
                               </a>
                             )}
                             {project.version === "2.0" && (
-                              <a
+                              <a rel="noopener noreferrer"
                                 href={`projects/${project.id}/project.json`}
                                 download={`${project.id}.json`}
                                 target="_blank"
@@ -149,7 +149,7 @@ class App extends Component {
                               </a>
                             )}
                             {project.version === "3.0" && (
-                              <a
+                              <a rel="noopener noreferrer"
                                 href={`projects/${project.id}/project.json`}
                                 download={`${project.id}.json`}
                                 target="_blank"
@@ -160,13 +160,13 @@ class App extends Component {
                         </td>
                         <td>
                           <div className="actions">
-                            <a
+                            <a rel="noopener noreferrer"
                               href={`https://scratch.mit.edu/projects/${project.id}/`}
                               target="_blank"
                             >
                               View in Scratch
                             </a>
-                            <a
+                            <a rel="noopener noreferrer"
                               href={`projects/${project.id}/api-res.json`}
                               target="_blank"
                             >
@@ -188,7 +188,7 @@ class App extends Component {
           <p>
             ScratchBackup is a website unrelated to Scratch and/or MIT. We're
             open source at{" "}
-            <a href="https://github.com/scratchbackup/scratchbackup.github.io">
+            <a rel="noopener noreferrer" href="https://github.com/scratchbackup/scratchbackup.github.io">
               GitHub
             </a>
             !
