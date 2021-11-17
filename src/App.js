@@ -85,7 +85,7 @@ class App extends Component {
             </div>
             <div className="form-item">
                 <label htmlFor="showID">Show Project ID</label>
-                <button name="showID" onChange="toggleID()">Toggle Project IDs</button></div>
+                <button name="showID" onsubmit="toggleID()">Toggle Project IDs</button></div>
           </div>
 
           <h3>Results</h3>
