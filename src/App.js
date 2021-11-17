@@ -7,6 +7,13 @@ function preventTags(str) {
     return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
 }
 var showID = true
+function toggleID() {
+    if (showID) {
+        showID = false
+    } else {
+        showID = true
+    }
+}
 class App extends Component {
   constructor(props) {
     super(props);
@@ -78,7 +85,7 @@ class App extends Component {
             </div>
             <div className="form-item">
                 <label htmlFor="showID">Show Project ID</label>
-                <input type="checkbox" name="showID" onChange={(e) => this.setState({ showIDpref: e.target.value })}></input></div>
+                <button name="showID" onChange="toggleID()">Toggle Project IDs</button></div>
           </div>
 
           <h3>Results</h3>
