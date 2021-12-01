@@ -124,8 +124,8 @@ class App extends Component {
                       <tr key={project.id}>
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
-                        <td><a href=https://scratch.mit.edu/users/{project.author}>
-                            <img src={project.pfp}></img>{" "} | {project.author}</td>
+                        <td><a href=`https://scratch.mit.edu/users/{project.author}`>
+                            <img src=`{project.pfp}`></img>{" "} | {project.author}</td>
                             </a>
                         <td>
                           {created.toLocaleDateString()}{" "}
