@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #2531ff;
+  text-decoration: none;
+} a:hover {text-decoration: underline;}
 .table {
   td {
     padding: 0.25em 0.5em;
