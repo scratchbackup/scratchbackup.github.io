@@ -20,12 +20,9 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Update projects
+      - name: Update projects & Build
         run: |
           yarn update-projects
-
-      - name: Build Website
-        run: |
           yarn build
 
       - uses: peaceiris/actions-gh-pages@v3
