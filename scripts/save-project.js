@@ -99,7 +99,7 @@ const saveProject = async (id) => {
         id: metadata.id,
         title: metadata.title,
         author: metadata.author.username,
-        pfp: metadata.author.profile.images."90x90",
+        pfp: metadata.author.profile.images.90x90,
         created: metadata.history.created,
         modified: metadata.history.modified,
         version,
