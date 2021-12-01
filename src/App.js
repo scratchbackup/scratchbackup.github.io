@@ -125,8 +125,7 @@ class App extends Component {
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
                         <td><a href={`https://scratch.mit.edu/users/${project.author}`}>
-                            <img src={`${project.pfp}`}></img>{" "} | {project.author}</td>
-                            </a>
+                            <img src={`${project.pfp}`}></img>{" "} | {project.author}</a></td>  
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
@@ -176,13 +175,13 @@ class App extends Component {
                               href={`https://scratch.mit.edu/projects/${project.id}/`}
                               target="_blank"
                             >
-                              View in Scratch
+                              view on scratch
                             </a>
                             <a rel="noopener noreferrer"
                               href={`projects/${project.id}/api-res.json`}
                               target="_blank"
                             >
-                              View full metadata
+                              view full metadata
                             </a>
                           </div>
                         </td>
