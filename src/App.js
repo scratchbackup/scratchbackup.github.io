@@ -124,7 +124,7 @@ class App extends Component {
                       <tr key={project.id}>
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
-                        <td>{project.author}</td>
+                        <td><img src={project.pfp}></img>{project.author}</td>
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
