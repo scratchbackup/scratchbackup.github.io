@@ -42,7 +42,7 @@ class App extends Component {
         project.title
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
-      )
+      ).sort(function(a, b){return a - b})
 
     return (
       <Layout>
