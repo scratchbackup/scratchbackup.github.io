@@ -16,7 +16,6 @@ a {
 .table {
   td {
     padding: 0.25em 0.5em;
-    vertical-align: middle;
   }
 
   tr:nth-child(even) {
@@ -26,6 +25,10 @@ a {
   display: block;
   overflow-x: auto;
   white-space: nowrap;
+}
+
+.verticalcenter {
+  vertical-align: middle;
 }
 
 .actions {
