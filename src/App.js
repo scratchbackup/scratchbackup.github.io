@@ -8,7 +8,7 @@ function preventTags(str) {
 }
 var showID = true
 function toggleID() {
-    if (showID) {
+    if (showID == true) {
         showID = false
     } else {
         showID = true
@@ -85,7 +85,7 @@ class App extends Component {
             </div>
             <div className="form-item">
                 <label htmlFor="showID">Show Project ID</label>
-                <button name="showID" onsubmit="toggleID()">Toggle Project IDs</button></div>
+                <button name="showID" onclick="toggleID()">Toggle Project IDs</button></div>
           </div>
 
           <h3>Results</h3>
@@ -125,7 +125,7 @@ class App extends Component {
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
                         <td><a href={`https://scratch.mit.edu/users/${project.author}`}>
-                            <img src={`${project.pfp}`}></img>{" "} | {project.author}</a></td>  
+                            <img src={`${project.pfp}`}></img>{" "} <span className="verticalcenter">| {project.author}</span></a></td>  
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
