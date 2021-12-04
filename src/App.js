@@ -42,7 +42,7 @@ class App extends Component {
         project.title
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
-      ).sort(function(a, b){return a - b})
+      ).sort()
 
     return (
       <Layout>
@@ -65,7 +65,7 @@ class App extends Component {
 
           <p>
             Restoring your previous project should be as easy as redownloading
-            the project as a ".sb", ".json" or ".sbcomp" file and importing it into
+            the project as a ".sb" or ".json" file and importing it into
             Scratch.
           </p>
 
@@ -91,7 +91,7 @@ class App extends Component {
           <h3>Results</h3>
 
           {this.state.loading ? (
-            <p>Loading...</p>
+            <p>Loading... This shouldn't take too long.</p>
           ) : (
             <table class="table">
               <thead>
