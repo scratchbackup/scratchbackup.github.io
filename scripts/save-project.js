@@ -91,7 +91,10 @@ const saveProject = async (id) => {
     `https://api.scratch.mit.edu/projects/${id}/`,
     "api-res.json"
   );
-
+  const ocularStats = await saveJSON(
+    `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
+    'status.json'
+  )
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
@@ -100,6 +103,7 @@ const saveProject = async (id) => {
         title: metadata.title,
         author: metadata.author.username,
         pfp: metadata.author.profile.images['60x60'],
+        color: ocularStats.color,
         created: metadata.history.created,
         modified: metadata.history.modified,
         version,

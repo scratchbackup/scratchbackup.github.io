@@ -124,8 +124,8 @@ class App extends Component {
                       <tr key={project.id}>
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
-                        <td><a href={`https://scratch.mit.edu/users/${project.author}`}>
-                            <img src={`${project.pfp}`}></img>{" "} <span className="verticalcenter">| {project.author}</span></a></td>  
+                        <td style={`background-color: ${project.color};`}><a href={`https://scratch.mit.edu/users/${project.author}`}>
+                            <img src={`${project.pfp.replace("60x60", "45x45")}`}></img>{" "} <span className="verticalcenter">| {project.author}</span></a></td>  
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
@@ -202,7 +202,7 @@ class App extends Component {
             <a rel="noopener noreferrer" href="https://github.com/scratchbackup/scratchbackup.github.io">
               GitHub
             </a>
-            !
+            .
           </p>
         </Footer>
       </Layout>
