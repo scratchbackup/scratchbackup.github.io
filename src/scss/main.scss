@@ -10,9 +10,10 @@ body {
 }
 
 a {
-  color: #2531ff;
+  color: black;
   text-decoration: none;
-} a:hover {font-weight: bold;}
+  font-weight: bold;
+} a:hover {cursor: pointer;}
 .table {
   td {
     padding: 0.25em 0.5em;
