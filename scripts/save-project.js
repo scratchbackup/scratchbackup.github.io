@@ -100,10 +100,10 @@ const saveProject = async (id) => {
     JSON.stringify(
       {
         id: metadata.id,
-        title: metadata.title,
-        author: metadata.author.username,
+        title: (metadata.title || `Untitled Project ${metadata.id}`),
+        author: (metadata.author.username || 'Unknown'),
         pfp: metadata.author.profile.images['60x60'],
-        color: ocularStats.color,
+        color: (ocularStats.color || false),
         created: metadata.history.created,
         modified: metadata.history.modified,
         version,
