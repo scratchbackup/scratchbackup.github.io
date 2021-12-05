@@ -13,7 +13,10 @@ a {
   color: black;
   text-decoration: none;
   font-weight: bold;
-} a:hover {cursor: pointer;}
+}
+a:hover {
+  cursor: pointer;
+}
 .table {
   td {
     padding: 0.25em 0.5em;
@@ -55,7 +58,7 @@ a {
       color: white;
       overflow-x: auto;
     }
-    
+
     button {
       border-radius: 0.5em;
       padding: 0.5em;
