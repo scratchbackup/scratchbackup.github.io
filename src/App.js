@@ -124,7 +124,7 @@ class App extends Component {
                       <tr key={project.id}>
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
-                        <td style={project.color}><a href={`https://scratch.mit.edu/users/${project.author}`}><img src={`${{project.pfp ? project.pfp : "https://cdn2.scratch.mit.edu/get_image/user/204310_55x55.png?v="}.replace("60x60", "45x45")}`}></img>{" "} <span className="verticalcenter">| {project.author}</span></a></td>  
+                        <td style={project.color}><a href={`https://scratch.mit.edu/users/${project.author}`}><img src={project.pfp.replace("60x60", "45x45")}></img><span className="verticalcenter">{project.author}</span></a></td>  
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
