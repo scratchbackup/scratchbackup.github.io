@@ -23,7 +23,7 @@ class ProjectSet {
   }
 
   toArray() {
-    return [...this.projectSet].sort((a, b) => a - b)
+    return [...this.projectSet]
   }
 
   has(id) {
@@ -42,6 +42,4 @@ class ProjectSet {
 
 const projectSet = new ProjectSet();
 
-try {
-  export projectSet;
-}
+module.exports = projectSet;
