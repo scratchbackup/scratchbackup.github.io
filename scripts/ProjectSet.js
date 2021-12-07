@@ -42,4 +42,4 @@ class ProjectSet {
 
 const projectSet = new ProjectSet();
 
-// export default projectSet;
+export new projectSet();
