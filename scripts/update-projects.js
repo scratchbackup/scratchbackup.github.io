@@ -2,8 +2,7 @@ const projectSet = require("./ProjectSet");
 const saveProject = require("./save-project");
 const collateProjects = require('./collate-projects');
 
-projectSetb = new projectSet.projectSet()
-projectSetb.read();
+projectSet.read();
 
 const updateProjects = async () => {
   console.log("Updating Projects...");
