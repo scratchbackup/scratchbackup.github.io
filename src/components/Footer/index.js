@@ -1,11 +1,15 @@
-import React from "react";
-import { Container } from "../Container";
-import "./index.scss";
+import React from "react"
+import { Container } from "../Container"
+import './index.scss';
 
 const Footer = ({ children }) => (
   <footer className="footer">
-    <Container>{children}</Container>
+    <Container>
+      { children }
+    </Container>
   </footer>
-);
+)
 
-export { Footer };
+export {
+  Footer
+}

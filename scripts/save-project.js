@@ -60,22 +60,19 @@ const saveProject = async (id) => {
       filename = "project.sb";
 
       fs.writeFileSync(path.resolve(PROJECT_FOLDER, filename), buffer);
-      return "1.4";
+      return "1.4"
     }
 
     const text = buffer.toString();
     const parsed = JSON.parse(text);
-
+    
     if (parsed.info) {
       version = "2.0";
     } else if (parsed.meta) {
       version = "3.0";
     }
 
-    fs.writeFileSync(
-      path.resolve(PROJECT_FOLDER, filename),
-      JSON.stringify(parsed, null, 2)
-    );
+    fs.writeFileSync(path.resolve(PROJECT_FOLDER, filename), JSON.stringify(parsed, null, 2));
 
     return version;
   };
@@ -96,17 +93,17 @@ const saveProject = async (id) => {
   );
   const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
-    "status.json"
-  );
+    'status.json'
+  )
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
       {
         id: metadata.id,
-        title: metadata.title || `Untitled Project ${metadata.id}`,
-        author: metadata.author.username || "Unknown",
-        pfp: metadata.author.profile.images["60x60"],
-        color: ocularStats.color || false,
+        title: (metadata.title || `Untitled Project ${metadata.id}`),
+        author: (metadata.author.username || 'Unknown'),
+        pfp: metadata.author.profile.images['60x60'],
+        color: (ocularStats.color || false),
         created: metadata.history.created,
         modified: metadata.history.modified,
         version,
