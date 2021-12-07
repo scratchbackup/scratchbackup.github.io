@@ -42,5 +42,6 @@ class ProjectSet {
 
 const projectSet = new ProjectSet();
 
-try:
+try {
   export projectSet;
+}
