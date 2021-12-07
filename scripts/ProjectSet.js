@@ -42,4 +42,5 @@ class ProjectSet {
 
 const projectSet = new ProjectSet();
 
-export new projectSet();
+try:
+  export projectSet;
