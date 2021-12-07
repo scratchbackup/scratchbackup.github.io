@@ -1,8 +1,8 @@
-import { readFileSync, writeFileSync } from "fs";
-import { resolve } from "path";
+const fs = = require("fs");
+const path = require("path");
 
 // The location of the root directory.
-const PROJECTS_PATH = resolve(__dirname, "..", "projects.json");
+const PROJECTS_PATH = path.resolve(__dirname, "..", "projects.json");
 
 class ProjectSet {
   hasRead = false;
@@ -15,7 +15,7 @@ class ProjectSet {
     this.hasRead = true;
 
     const projectArray = JSON.parse(
-      readFileSync(PROJECTS_PATH, {
+      fs.readFileSync(PROJECTS_PATH, {
         encoding: "utf-8",
       })
     );
@@ -36,7 +36,7 @@ class ProjectSet {
 
   save() {
     // The "null, 2" part prettifies the JSON file
-    writeFileSync(PROJECTS_PATH, JSON.stringify(this.toArray(), null, 2))
+    fs.writeFileSync(PROJECTS_PATH, JSON.stringify(this.toArray(), null, 2))
   }
 }
 
