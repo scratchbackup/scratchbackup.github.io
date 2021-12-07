@@ -1,20 +1,20 @@
-import { read, toArray } from "./ProjectSet";
-import saveProject from "./save-project";
-import collateProjects from "./collate-projects";
+const projectSet = require("./ProjectSet")
+const saveProject = require("./save-project");
+const collateProjects = require('./collate-projects');
 
-read();
+projectSet.read()
 
 const updateProjects = async () => {
   console.log("Updating Projects...");
-  for (const id of toArray()) {
+  for (const id of projectSet.toArray()) {
     try {
       await saveProject(id);
-      console.log(`Saved ${id}!`);
-    } catch (e) {
-      console.error(`Failed to save ${id} because of an error: ${e}`);
+      console.log(`Saved ${id}!`)
+    } catch(e) {
+      console.error(`Failed to save ${id} because of an error: ${e}`)
     }
   }
-  console.log("Collating Projects...");
+  console.log('Collating Projects...')
   collateProjects();
   console.log("Updates Completed!");
 };

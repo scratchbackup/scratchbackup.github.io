@@ -4,15 +4,15 @@ import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
 import { Main } from "./components/Main";
 function preventTags(str) {
-  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
 }
-var showID = true;
+var showID = true
 function toggleID() {
-  if (showID == true) {
-    showID = false;
-  } else {
-    showID = true;
-  }
+    if (showID == true) {
+        showID = false
+    } else {
+        showID = true
+    }
 }
 class App extends Component {
   constructor(props) {
@@ -42,8 +42,7 @@ class App extends Component {
         project.title
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
-      )
-      .sort();
+      ).sort()
 
     return (
       <Layout>
@@ -85,11 +84,8 @@ class App extends Component {
               ></input>
             </div>
             <div className="form-item">
-              <label htmlFor="showID">Show Project ID</label>
-              <button name="showID" onclick="toggleID()">
-                Toggle Project IDs
-              </button>
-            </div>
+                <label htmlFor="showID">Show Project ID</label>
+                <button name="showID" onclick="toggleID()">Toggle Project IDs</button></div>
           </div>
 
           <h3>Results</h3>
@@ -118,95 +114,80 @@ class App extends Component {
                     </td>
                   </tr>
                 )}
-                {projects.map((project) => {
-                  const created = new Date(project.created);
-                  const modified = new Date(project.modified);
-                  const author = project.author;
+                {
+                  projects.map((project) => {
+                    const created = new Date(project.created);
+                    const modified = new Date(project.modified);
+                    const author = project.author;
 
-                  return (
-                    <tr key={project.id}>
-                      <td>{showID ? project.id : "-"}</td>
-                      <td>{project.title}</td>
-                      <td style={{ backgroundColor: project.color }}>
-                        <a
-                          href={`https://scratch.mit.edu/users/${project.author}`}
-                        >
-                          <img
-                            src={`${project.pfp.replace("60x60", "45x45")}`}
-                          ></img>{" "}
-                          <span className="verticalcenter">
-                            | {project.author}
-                          </span>
-                        </a>
-                      </td>
-                      <td>
-                        {created.toLocaleDateString()}{" "}
-                        {created.toLocaleTimeString()}
-                      </td>
-                      <td>
-                        {modified.toLocaleDateString()}{" "}
-                        {modified.toLocaleTimeString()}
-                      </td>
-                      <td>
-                        <div className="actions">
-                          {project.version === "1.4" ? (
-                            <a
-                              rel="noopener noreferrer"
-                              href={`projects/${project.id}/project.sb`}
+                    return (
+                      <tr key={project.id}>
+                        <td>{showID ? project.id : "-"}</td>
+                        <td>{project.title}</td>
+                        <td style={{backgroundColor: project.color}}><a href={`https://scratch.mit.edu/users/${project.author}`}>
+                            <img src={`${project.pfp.replace("60x60", "45x45")}`}></img>{" "} <span className="verticalcenter">| {project.author}</span></a></td>  
+                        <td>
+                          {created.toLocaleDateString()}{" "}
+                          {created.toLocaleTimeString()}
+                        </td>
+                        <td>
+                          {modified.toLocaleDateString()}{" "}
+                          {modified.toLocaleTimeString()}
+                        </td>
+                        <td>
+                          <div className="actions">
+                            {project.version === "1.4" ? (
+                              <a rel="noopener noreferrer"
+                                href={`projects/${project.id}/project.sb`}
+                                target="_blank" download={`${project.id}.sb`}
+                              >
+                                project.sb
+                              </a>
+                            ) : (
+                              <a rel="noopener noreferrer"
+                                href={`projects/${project.id}/project.json`}
+                                target="_blank" download={`${project.id}.json`}
+                              >
+                                project.json
+                              </a>
+                            )}
+                            {project.version === "2.0" && (
+                              <a rel="noopener noreferrer"
+                                href={`projects/${project.id}/project.json`}
+                                download={`${project.id}.json`}
+                                target="_blank"
+                              >
+                              </a>
+                            )}
+                            {project.version === "3.0" && (
+                              <a rel="noopener noreferrer"
+                                href={`projects/${project.id}/project.json`}
+                                download={`${project.id}.json`}
+                                target="_blank"
+                              >
+                              </a>
+                            )}
+                          </div>
+                        </td>
+                        <td>
+                          <div className="actions">
+                            <a rel="noopener noreferrer"
+                              href={`https://scratch.mit.edu/projects/${project.id}/`}
                               target="_blank"
-                              download={`${project.id}.sb`}
                             >
-                              project.sb
+                              view on scratch
                             </a>
-                          ) : (
-                            <a
-                              rel="noopener noreferrer"
-                              href={`projects/${project.id}/project.json`}
+                            <a rel="noopener noreferrer"
+                              href={`projects/${project.id}/api-res.json`}
                               target="_blank"
-                              download={`${project.id}.json`}
                             >
-                              project.json
+                              view full metadata
                             </a>
-                          )}
-                          {project.version === "2.0" && (
-                            <a
-                              rel="noopener noreferrer"
-                              href={`projects/${project.id}/project.json`}
-                              download={`${project.id}.json`}
-                              target="_blank"
-                            ></a>
-                          )}
-                          {project.version === "3.0" && (
-                            <a
-                              rel="noopener noreferrer"
-                              href={`projects/${project.id}/project.json`}
-                              download={`${project.id}.json`}
-                              target="_blank"
-                            ></a>
-                          )}
-                        </div>
-                      </td>
-                      <td>
-                        <div className="actions">
-                          <a
-                            rel="noopener noreferrer"
-                            href={`https://scratch.mit.edu/projects/${project.id}/`}
-                            target="_blank"
-                          >
-                            view on scratch
-                          </a>
-                          <a
-                            rel="noopener noreferrer"
-                            href={`projects/${project.id}/api-res.json`}
-                            target="_blank"
-                          >
-                            view full metadata
-                          </a>
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
               </tbody>
             </table>
           )}
@@ -218,10 +199,7 @@ class App extends Component {
           <p>
             ScratchBackup is a website unrelated to Scratch and/or MIT. We're
             open source at{" "}
-            <a
-              rel="noopener noreferrer"
-              href="https://github.com/scratchbackup/scratchbackup.github.io"
-            >
+            <a rel="noopener noreferrer" href="https://github.com/scratchbackup/scratchbackup.github.io">
               GitHub
             </a>
             .
