@@ -1,7 +1,7 @@
 const prettier = require("prettier");
 const fs = require("fs");
 const path = require("path");
-const nf = import("node-fetch");
+import("node-fetch");
 
 // The location of the dist directory.
 const DIST_PATH = path.resolve(__dirname, "..", "dist");
@@ -16,7 +16,7 @@ const saveProject = async (id) => {
   };
 
   const saveJSON = async (url, filename) => {
-    const res = await nf.fetch(url);
+    const res = await fetch(url);
     await checkForErrors(res);
     const text = await res.text();
     const formatted = prettier.format(text, { parser: "json" });
@@ -30,7 +30,7 @@ const saveProject = async (id) => {
     const writeStream = fs.createWriteStream(
       path.resolve(PROJECT_FOLDER, filename)
     );
-    const res = await nf.fetch(url);
+    const res = await fetch(url);
     await checkForErrors(res);
 
     await new Promise((resolve, reject) => {
@@ -44,7 +44,7 @@ const saveProject = async (id) => {
     let filename = "project.json";
     let version = "unknown";
 
-    const res = await nf.fetch(url);
+    const res = await fetch(url);
     await checkForErrors(res);
 
     const buffer = await res.buffer();
