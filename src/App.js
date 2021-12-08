@@ -39,7 +39,7 @@ class App extends Component {
   render() {
     const projects = this.state.projects
       .filter((project) =>
-        function(){return project.title + " " + project.author}
+        project.title
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
       ).sort()
