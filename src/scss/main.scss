@@ -13,7 +13,10 @@ a {
   color: black;
   text-decoration: none;
   font-weight: bold;
-} a:hover {cursor: pointer;}
+} 
+a:hover {
+  cursor: pointer;
+}
 .table {
   td {
     padding: 0.25em 0.5em;
@@ -57,7 +60,7 @@ a {
       height: 3em;
       background-color: #9000e3;
       color: white;
-      overflow-x: auto;
+      overflow-x: scroll;
     }
     
     button {
