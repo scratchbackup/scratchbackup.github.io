@@ -1,7 +1,7 @@
 const prettier = require("prettier");
 const fs = require("fs");
 const path = require("path");
-import 'fetch' from "node-fetch");
+const fetch = require ("node-fetch");
 
 // The location of the dist directory.
 const DIST_PATH = path.resolve(__dirname, "..", "dist");
@@ -9,7 +9,6 @@ const SCRATCH1_START = Buffer.from("ScratchV01");
 
 const saveProject = async (id) => {
   const PROJECT_FOLDER = path.resolve(DIST_PATH, "projects", id);
-
   const checkForErrors = async (res) => {
     if (res.ok) return;
     throw new Error(`Cannot fetch ${res.url} because of error ${res.status}`);
