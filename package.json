@@ -15,7 +15,7 @@
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.3",
     "css-loader": "^6.4.0",
     "node-fetch": "2.6.5",
     "prettier": "^2.5.1",
