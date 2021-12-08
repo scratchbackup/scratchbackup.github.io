@@ -862,7 +862,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/json-schema@*", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8":
+"@types/json-schema@*", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.9"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.9.tgz"
 
@@ -1024,9 +1024,21 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
+ajv-formats@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ajv-formats/-/ajv-formats-2.1.1.tgz#6e669400659eb74973bbf2e33327180a0996b520"
+  dependencies:
+    ajv "^8.0.0"
+
 ajv-keywords@^3.5.2:
   version "3.5.2"
   resolved "https://registry.npmjs.org/ajv-keywords/-/ajv-keywords-3.5.2.tgz"
+
+ajv-keywords@^5.0.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-5.1.0.tgz#69d4d385a4733cdbeab44964a1170a88f87f0e16"
+  dependencies:
+    fast-deep-equal "^3.1.3"
 
 ajv@^6.12.4, ajv@^6.12.5:
   version "6.12.6"
@@ -1035,6 +1047,15 @@ ajv@^6.12.4, ajv@^6.12.5:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.4.1"
+    uri-js "^4.2.2"
+
+ajv@^8.0.0, ajv@^8.8.0:
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.8.2.tgz#01b4fef2007a28bf75f0b7fc009f62679de4abbb"
+  dependencies:
+    fast-deep-equal "^3.1.1"
+    json-schema-traverse "^1.0.0"
+    require-from-string "^2.0.2"
     uri-js "^4.2.2"
 
 ansi-html-community@^0.0.8:
@@ -1212,7 +1233,7 @@ chalk@^2.0.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-"chokidar@>=3.0.0 <4.0.0", chokidar@^3.5.1:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.5.2:
   version "3.5.2"
   resolved "https://registry.npmjs.org/chokidar/-/chokidar-3.5.2.tgz"
   dependencies:
@@ -1395,9 +1416,9 @@ deep-equal@^1.0.1:
     object-keys "^1.1.1"
     regexp.prototype.flags "^1.2.0"
 
-default-gateway@^6.0.0:
+default-gateway@^6.0.3:
   version "6.0.3"
-  resolved "https://registry.npmjs.org/default-gateway/-/default-gateway-6.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/default-gateway/-/default-gateway-6.0.3.tgz#819494c888053bdb743edbf343d6cdf7f2943a71"
   dependencies:
     execa "^5.0.0"
 
@@ -1588,7 +1609,7 @@ express@^4.17.1:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
-fast-deep-equal@^3.1.1:
+fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
 
@@ -1875,28 +1896,15 @@ inherits@2, inherits@2.0.3, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz"
 
-internal-ip@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.npmjs.org/internal-ip/-/internal-ip-6.2.0.tgz"
-  dependencies:
-    default-gateway "^6.0.0"
-    ipaddr.js "^1.9.1"
-    is-ip "^3.1.0"
-    p-event "^4.2.0"
-
 interpret@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/interpret/-/interpret-2.2.0.tgz"
-
-ip-regex@^4.0.0:
-  version "4.3.0"
-  resolved "https://registry.npmjs.org/ip-regex/-/ip-regex-4.3.0.tgz"
 
 ip@^1.1.0:
   version "1.1.5"
   resolved "https://registry.npmjs.org/ip/-/ip-1.1.5.tgz"
 
-ipaddr.js@1.9.1, ipaddr.js@^1.9.1:
+ipaddr.js@1.9.1:
   version "1.9.1"
   resolved "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.1.tgz"
 
@@ -1942,12 +1950,6 @@ is-glob@^4.0.1, is-glob@^4.0.3, is-glob@~4.0.1:
   resolved "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz"
   dependencies:
     is-extglob "^2.1.1"
-
-is-ip@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/is-ip/-/is-ip-3.1.0.tgz"
-  dependencies:
-    ip-regex "^4.0.0"
 
 is-number@^7.0.0:
   version "7.0.0"
@@ -2027,6 +2029,10 @@ json-parse-better-errors@^1.0.2:
 json-schema-traverse@^0.4.1:
   version "0.4.1"
   resolved "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz"
+
+json-schema-traverse@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz#ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2"
 
 json5@^1.0.1:
   version "1.0.1"
@@ -2280,16 +2286,6 @@ open@^8.0.9:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
-p-event@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/p-event/-/p-event-4.2.0.tgz"
-  dependencies:
-    p-timeout "^3.1.0"
-
-p-finally@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz"
-
 p-limit@^2.2.0:
   version "2.3.0"
   resolved "https://registry.npmjs.org/p-limit/-/p-limit-2.3.0.tgz"
@@ -2320,12 +2316,6 @@ p-retry@^4.5.0:
   dependencies:
     "@types/retry" "^0.12.0"
     retry "^0.13.1"
-
-p-timeout@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/p-timeout/-/p-timeout-3.2.0.tgz"
-  dependencies:
-    p-finally "^1.0.0"
 
 p-try@^2.0.0:
   version "2.2.0"
@@ -2573,6 +2563,10 @@ regjsparser@^0.7.0:
   dependencies:
     jsesc "~0.5.0"
 
+require-from-string@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/require-from-string/-/require-from-string-2.0.2.tgz#89a7fdd938261267318eafe14f9c32e598c36909"
+
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz"
@@ -2662,6 +2656,15 @@ schema-utils@^3.0.0, schema-utils@^3.1.0, schema-utils@^3.1.1:
     "@types/json-schema" "^7.0.8"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
+
+schema-utils@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-4.0.0.tgz#60331e9e3ae78ec5d16353c467c34b3a0a1d3df7"
+  dependencies:
+    "@types/json-schema" "^7.0.9"
+    ajv "^8.8.0"
+    ajv-formats "^2.1.1"
+    ajv-keywords "^5.0.0"
 
 select-hose@^2.0.0:
   version "2.0.0"
@@ -3011,27 +3014,27 @@ webpack-dev-middleware@^5.2.1:
     range-parser "^1.2.1"
     schema-utils "^3.1.0"
 
-webpack-dev-server@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.npmjs.org/webpack-dev-server/-/webpack-dev-server-4.3.1.tgz"
+webpack-dev-server@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-4.6.0.tgz#e8648601c440172d9b6f248d28db98bed335315a"
   dependencies:
     ansi-html-community "^0.0.8"
     bonjour "^3.5.0"
-    chokidar "^3.5.1"
+    chokidar "^3.5.2"
     colorette "^2.0.10"
     compression "^1.7.4"
     connect-history-api-fallback "^1.6.0"
+    default-gateway "^6.0.3"
     del "^6.0.0"
     express "^4.17.1"
     graceful-fs "^4.2.6"
     html-entities "^2.3.2"
     http-proxy-middleware "^2.0.0"
-    internal-ip "^6.2.0"
     ipaddr.js "^2.0.1"
     open "^8.0.9"
     p-retry "^4.5.0"
     portfinder "^1.0.28"
-    schema-utils "^3.1.0"
+    schema-utils "^4.0.0"
     selfsigned "^1.10.11"
     serve-index "^1.9.1"
     sockjs "^0.3.21"
