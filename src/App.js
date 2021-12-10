@@ -3,15 +3,6 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
 import { Main } from "./components/Main";
-var showID = true
-function toggleID() {
-    var IDShowHandler = document.getElementById("idtogg");
-    if (showID == true) {
-        showID = false
-    } else {
-        showID = true
-    }
-}
 class App extends Component {
   constructor(props) {
     super(props);
@@ -81,9 +72,6 @@ class App extends Component {
                 onChange={(e) => this.setState({ nameSearch: e.target.value })}
               ></input>
             </div>
-            <div className="form-item">
-                <label htmlFor="showID">Show Project ID</label>
-                <button id="idtogg" name="showID" onSubmit="toggleID()">Toggle Project IDs</button></div>
           </div>
 
           <h3>Results</h3>
