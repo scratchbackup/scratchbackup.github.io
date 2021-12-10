@@ -188,7 +188,18 @@ class App extends Component {
               GitHub
             </a>
             .
-          </p>
+          </p><button value="change theme (experimental placeholder)" onSubmit="changeTheme()" />
+          <script>
+            function changeTheme() {
+              var theme;
+              if (theme = "dark") {
+                theme = "light" 
+              } else {
+                theme = "dark"
+              }
+              getElementByTagName("Layout").class = getElementByTagName("Layout").class + theme + "-mode "
+            }
+           </script>
         </Footer>
       </Layout>
     );
