@@ -1,0 +1,1071 @@
+{
+  "targets": [
+    {
+      "isStage": true,
+      "name": "Stage",
+      "variables": {
+        "`jEk@4|i[#Fk?(8x)AV.-my variable": [
+          "my variable",
+          0
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        "5+7XSr2FgF;]TRg}AH,T": {
+          "opcode": "event_whenflagclicked",
+          "next": "^,65wvfF69i~G*ny,aOL",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 86,
+          "y": 92
+        },
+        "^,65wvfF69i~G*ny,aOL": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "5+7XSr2FgF;]TRg}AH,T",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "#:XHmNS{zZhcP!so~@?J"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "#:XHmNS{zZhcP!so~@?J": {
+          "opcode": "sound_playuntildone",
+          "next": "1k#2|*t=lxKBIlg/%YMx",
+          "parent": "^,65wvfF69i~G*ny,aOL",
+          "inputs": {
+            "SOUND_MENU": [
+              1,
+              "#wDfVq9?U)Tj}_[{;QQ/"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "#wDfVq9?U)Tj}_[{;QQ/": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "#:XHmNS{zZhcP!so~@?J",
+          "inputs": {},
+          "fields": {
+            "SOUND_MENU": [
+              "Downtown",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "1k#2|*t=lxKBIlg/%YMx": {
+          "opcode": "sound_playuntildone",
+          "next": "+/IKc~.~9A[LRAF5~hq=",
+          "parent": "#:XHmNS{zZhcP!so~@?J",
+          "inputs": {
+            "SOUND_MENU": [
+              1,
+              "0w5d(Mr-wOKa+~dx4h4Q"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "0w5d(Mr-wOKa+~dx4h4Q": {
+          "opcode": "sound_sounds_menu",
+          "next": null,
+          "parent": "1k#2|*t=lxKBIlg/%YMx",
+          "inputs": {},
+          "fields": {
+            "SOUND_MENU": [
+              "Downtown2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "+/IKc~.~9A[LRAF5~hq=": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": "1k#2|*t=lxKBIlg/%YMx",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "08b7dd9e734611bc94eee3f3556beb17",
+          "name": "backdrop1",
+          "bitmapResolution": 1,
+          "md5ext": "08b7dd9e734611bc94eee3f3556beb17.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 317.1686746987955,
+          "rotationCenterY": 202.50000000000006
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "cb216818056a8386b2aadeade25d5661",
+          "name": "Downtown",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 3045526,
+          "md5ext": "cb216818056a8386b2aadeade25d5661.wav"
+        },
+        {
+          "assetId": "b81158bd326ac8782b5f342e8c787577",
+          "name": "Downtown2",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 3180356,
+          "md5ext": "b81158bd326ac8782b5f342e8c787577.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 0,
+      "tempo": 60,
+      "videoTransparency": 50,
+      "videoState": "on",
+      "textToSpeechLanguage": null
+    },
+    {
+      "isStage": false,
+      "name": "Boyfriend",
+      "variables": {
+        "oz3M|?iBod{7EZ{fkMA9": [
+          "animation_idle_delay",
+          "0"
+        ],
+        "]sTImWdy0W4WI32d:x.q": [
+          "current animation",
+          "idle"
+        ]
+      },
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        ")!|xhhE+p8}^e~c6^L.9": {
+          "opcode": "event_whenflagclicked",
+          "next": "NirHJSP^H+$e-1GqqJv.",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 114,
+          "y": 10
+        },
+        "NirHJSP^H+$e-1GqqJv.": {
+          "opcode": "looks_show",
+          "next": "1pA*EW:6[sNKetap8orr",
+          "parent": ")!|xhhE+p8}^e~c6^L.9",
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "1pA*EW:6[sNKetap8orr": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "NirHJSP^H+$e-1GqqJv.",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "`$s5IWQwm.2dHLZB{m8V"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "`$s5IWQwm.2dHLZB{m8V": {
+          "opcode": "control_wait",
+          "next": "*7}DLDK^[B~qN|WCTHhq",
+          "parent": "1pA*EW:6[sNKetap8orr",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.001"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "*7}DLDK^[B~qN|WCTHhq": {
+          "opcode": "looks_switchcostumeto",
+          "next": "IMgCnB{{7B^Z{t:wJJ/^",
+          "parent": "`$s5IWQwm.2dHLZB{m8V",
+          "inputs": {
+            "COSTUME": [
+              1,
+              "OAZ/M1JxF;.(JI66c1k`"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "OAZ/M1JxF;.(JI66c1k`": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "*7}DLDK^[B~qN|WCTHhq",
+          "inputs": {},
+          "fields": {
+            "COSTUME": [
+              "Boyfriend Idle1",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "IMgCnB{{7B^Z{t:wJJ/^": {
+          "opcode": "control_wait",
+          "next": "[:VB#WU-iZ{i^7*/oTGh",
+          "parent": "*7}DLDK^[B~qN|WCTHhq",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.001"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "[:VB#WU-iZ{i^7*/oTGh": {
+          "opcode": "looks_switchcostumeto",
+          "next": "8dCAn#wl1-#ivpm-hl56",
+          "parent": "IMgCnB{{7B^Z{t:wJJ/^",
+          "inputs": {
+            "COSTUME": [
+              1,
+              "!m+%cGPMM8bp-v!@9cp,"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "!m+%cGPMM8bp-v!@9cp,": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "[:VB#WU-iZ{i^7*/oTGh",
+          "inputs": {},
+          "fields": {
+            "COSTUME": [
+              "Boyfriend Idle2",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "8dCAn#wl1-#ivpm-hl56": {
+          "opcode": "control_wait",
+          "next": "J^NOb?9Pdkb;2wWIr;Po",
+          "parent": "[:VB#WU-iZ{i^7*/oTGh",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.01"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "J^NOb?9Pdkb;2wWIr;Po": {
+          "opcode": "looks_switchcostumeto",
+          "next": "}c(_IYV!kiJdzCgTfrBR",
+          "parent": "8dCAn#wl1-#ivpm-hl56",
+          "inputs": {
+            "COSTUME": [
+              1,
+              "-.S+zMwxMRo2]rMY/=qr"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "-.S+zMwxMRo2]rMY/=qr": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "J^NOb?9Pdkb;2wWIr;Po",
+          "inputs": {},
+          "fields": {
+            "COSTUME": [
+              "Boyfriend Idle3",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "}c(_IYV!kiJdzCgTfrBR": {
+          "opcode": "control_wait",
+          "next": "iq4D|4rUl!Pr$a(!D0Y9",
+          "parent": "J^NOb?9Pdkb;2wWIr;Po",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "iq4D|4rUl!Pr$a(!D0Y9": {
+          "opcode": "looks_switchcostumeto",
+          "next": "k$N~9aAD1dw417LjV2~.",
+          "parent": "}c(_IYV!kiJdzCgTfrBR",
+          "inputs": {
+            "COSTUME": [
+              1,
+              "QY-RONHXE4XI?2~+#xSM"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "QY-RONHXE4XI?2~+#xSM": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "iq4D|4rUl!Pr$a(!D0Y9",
+          "inputs": {},
+          "fields": {
+            "COSTUME": [
+              "Boyfriend Idle4",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "k$N~9aAD1dw417LjV2~.": {
+          "opcode": "control_wait",
+          "next": "*K?9dv*]mYZ7ewQ_=#Ux",
+          "parent": "iq4D|4rUl!Pr$a(!D0Y9",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.1"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "*K?9dv*]mYZ7ewQ_=#Ux": {
+          "opcode": "looks_switchcostumeto",
+          "next": "Z,D_1]~c;ZFJC/GEE*WJ",
+          "parent": "k$N~9aAD1dw417LjV2~.",
+          "inputs": {
+            "COSTUME": [
+              1,
+              "MiK3/eW%#s`0k|SCmXkX"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "MiK3/eW%#s`0k|SCmXkX": {
+          "opcode": "looks_costume",
+          "next": null,
+          "parent": "*K?9dv*]mYZ7ewQ_=#Ux",
+          "inputs": {},
+          "fields": {
+            "COSTUME": [
+              "Boyfriend Idle5",
+              null
+            ]
+          },
+          "shadow": true,
+          "topLevel": false
+        },
+        "Z,D_1]~c;ZFJC/GEE*WJ": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": "*K?9dv*]mYZ7ewQ_=#Ux",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.5"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 4,
+      "costumes": [
+        {
+          "assetId": "eb6dc36daa77396ee471617ecd3a3820",
+          "name": "Boyfriend Idle1",
+          "bitmapResolution": 1,
+          "md5ext": "eb6dc36daa77396ee471617ecd3a3820.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000025
+        },
+        {
+          "assetId": "ed6b948a74932f8ac14fea1022e5b4fd",
+          "name": "Boyfriend Idle2",
+          "bitmapResolution": 1,
+          "md5ext": "ed6b948a74932f8ac14fea1022e5b4fd.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.4999700000001
+        },
+        {
+          "assetId": "c9559e51e7f698a30db6eba79b401940",
+          "name": "Boyfriend Idle3",
+          "bitmapResolution": 1,
+          "md5ext": "c9559e51e7f698a30db6eba79b401940.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.4999700000002
+        },
+        {
+          "assetId": "c2077d6b6b6fc51b79f75a0d58a38040",
+          "name": "Boyfriend Idle4",
+          "bitmapResolution": 1,
+          "md5ext": "c2077d6b6b6fc51b79f75a0d58a38040.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000022
+        },
+        {
+          "assetId": "85cc12329e6584693077f56776bde278",
+          "name": "Boyfriend Idle5",
+          "bitmapResolution": 1,
+          "md5ext": "85cc12329e6584693077f56776bde278.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 130,
+          "rotationCenterY": 157.49997000000016
+        },
+        {
+          "assetId": "6f2f9b3eab152ade6190feaaeabd4ac4",
+          "name": "Boyfriend Storm1",
+          "bitmapResolution": 1,
+          "md5ext": "6f2f9b3eab152ade6190feaaeabd4ac4.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000002
+        },
+        {
+          "assetId": "699aeaf4821f639979f2231f40272221",
+          "name": "Boyfriend Storm2",
+          "bitmapResolution": 1,
+          "md5ext": "699aeaf4821f639979f2231f40272221.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000008
+        },
+        {
+          "assetId": "a2dcd15e1f3aac33ac9aca804d73f1f6",
+          "name": "Boyfriend Left2",
+          "bitmapResolution": 1,
+          "md5ext": "a2dcd15e1f3aac33ac9aca804d73f1f6.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49995
+        },
+        {
+          "assetId": "d26c8eb669650b3e668f6191f8355448",
+          "name": "Boyfriend Left1",
+          "bitmapResolution": 1,
+          "md5ext": "d26c8eb669650b3e668f6191f8355448.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49994500000003
+        },
+        {
+          "assetId": "3543424d41b1a06163a2efb509ae9566",
+          "name": "Boyfriend Left3",
+          "bitmapResolution": 1,
+          "md5ext": "3543424d41b1a06163a2efb509ae9566.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49995
+        },
+        {
+          "assetId": "7f617e6902a5884c3ea00129b2eb1af8",
+          "name": "Boyfriend LeftFail1",
+          "bitmapResolution": 1,
+          "md5ext": "7f617e6902a5884c3ea00129b2eb1af8.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155.00000054400095,
+          "rotationCenterY": 147.00746117550824
+        },
+        {
+          "assetId": "1c27703535324077da8564f4a0e38bbd",
+          "name": "Boyfriend LeftFail2",
+          "bitmapResolution": 1,
+          "md5ext": "1c27703535324077da8564f4a0e38bbd.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 154.9999970722364,
+          "rotationCenterY": 143.45575100400174
+        },
+        {
+          "assetId": "237430148dc9a2cab80b5e90ace9bfb5",
+          "name": "Boyfriend Right1",
+          "bitmapResolution": 1,
+          "md5ext": "237430148dc9a2cab80b5e90ace9bfb5.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000008
+        },
+        {
+          "assetId": "53b296cfc229d7657102e33b2fba8bc2",
+          "name": "Boyfriend Right2",
+          "bitmapResolution": 1,
+          "md5ext": "53b296cfc229d7657102e33b2fba8bc2.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000005
+        },
+        {
+          "assetId": "e91cfa635069ead75cf9af12739d101d",
+          "name": "Boyfriend RightFail1",
+          "bitmapResolution": 1,
+          "md5ext": "e91cfa635069ead75cf9af12739d101d.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 147.5
+        },
+        {
+          "assetId": "125cb442b0b73b6b71c9e7060cdaa6f8",
+          "name": "Boyfriend RightFail2",
+          "bitmapResolution": 1,
+          "md5ext": "125cb442b0b73b6b71c9e7060cdaa6f8.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155.00000000000023,
+          "rotationCenterY": 147.5
+        },
+        {
+          "assetId": "d277b6c8520fe9919f30bf772ddb12d7",
+          "name": "Boyfriend Up1",
+          "bitmapResolution": 1,
+          "md5ext": "d277b6c8520fe9919f30bf772ddb12d7.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 150.80236
+        },
+        {
+          "assetId": "9be363e2a1b3b0bec7af57b5840f84d7",
+          "name": "Boyfriend Up2",
+          "bitmapResolution": 1,
+          "md5ext": "9be363e2a1b3b0bec7af57b5840f84d7.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 146.7621
+        },
+        {
+          "assetId": "1967e7970a4d08e71f4310ba3d552775",
+          "name": "Boyfriend UpFail1",
+          "bitmapResolution": 1,
+          "md5ext": "1967e7970a4d08e71f4310ba3d552775.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000008
+        },
+        {
+          "assetId": "8ce8f79bd3a118c09f077279a02f4ca1",
+          "name": "Boyfriend UpFail2",
+          "bitmapResolution": 1,
+          "md5ext": "8ce8f79bd3a118c09f077279a02f4ca1.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000008
+        },
+        {
+          "assetId": "b6aae57a4442bb4731400a13c03af327",
+          "name": "Boyfriend Down1",
+          "bitmapResolution": 1,
+          "md5ext": "b6aae57a4442bb4731400a13c03af327.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000002
+        },
+        {
+          "assetId": "a60573524a7f1b2fd27b43e8dd2ba8c4",
+          "name": "Boyfriend Down2",
+          "bitmapResolution": 1,
+          "md5ext": "a60573524a7f1b2fd27b43e8dd2ba8c4.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000002
+        },
+        {
+          "assetId": "3250d55b873e613b99a06c008f3b9b02",
+          "name": "Boyfriend DownFail1",
+          "bitmapResolution": 1,
+          "md5ext": "3250d55b873e613b99a06c008f3b9b02.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 154.99999500000013,
+          "rotationCenterY": 139.49996999999996
+        },
+        {
+          "assetId": "b10cbbcb032cbc7a93acd13a1a89d9f8",
+          "name": "Boyfriend DownFail2",
+          "bitmapResolution": 1,
+          "md5ext": "b10cbbcb032cbc7a93acd13a1a89d9f8.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 154.99999500000013,
+          "rotationCenterY": 139.49996999999996
+        },
+        {
+          "assetId": "a89b9d907ed8351d1058127b4e717912",
+          "name": "Boyfriend Pose1",
+          "bitmapResolution": 1,
+          "md5ext": "a89b9d907ed8351d1058127b4e717912.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.4999700000001
+        },
+        {
+          "assetId": "53acef18e05c7f3a01d4b05800768605",
+          "name": "Boyfriend Pose2",
+          "bitmapResolution": 1,
+          "md5ext": "53acef18e05c7f3a01d4b05800768605.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.4999700000001
+        },
+        {
+          "assetId": "6079d59ebec048d5d672f252b643aa8b",
+          "name": "Boyfriend Pose3",
+          "bitmapResolution": 1,
+          "md5ext": "6079d59ebec048d5d672f252b643aa8b.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 155,
+          "rotationCenterY": 139.49997000000005
+        },
+        {
+          "assetId": "fd7e4440d48fd26a0b2577a9fe25f49e",
+          "name": "Boyfriend Skeleton1",
+          "bitmapResolution": 1,
+          "md5ext": "fd7e4440d48fd26a0b2577a9fe25f49e.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 181.00000000000014,
+          "rotationCenterY": 131.49997000000005
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "1fe52a86ce7519ce5e6a3b864d0f2d23",
+          "name": "fnf_loss_sfx",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 42386,
+          "md5ext": "1fe52a86ce7519ce5e6a3b864d0f2d23.wav"
+        },
+        {
+          "assetId": "72e287981d2af9e247b0ce79dbb3ff62",
+          "name": "replace down sound",
+          "dataFormat": "wav",
+          "rate": 44100,
+          "sampleCount": 7323,
+          "md5ext": "72e287981d2af9e247b0ce79dbb3ff62.wav"
+        },
+        {
+          "assetId": "f591d64a05070485834357780d22f45d",
+          "name": "replace up sound",
+          "dataFormat": "wav",
+          "rate": 44100,
+          "sampleCount": 7672,
+          "md5ext": "f591d64a05070485834357780d22f45d.wav"
+        },
+        {
+          "assetId": "5fd09d3aec0e18b9850a096deab19198",
+          "name": "replace left sound",
+          "dataFormat": "wav",
+          "rate": 44100,
+          "sampleCount": 7497,
+          "md5ext": "5fd09d3aec0e18b9850a096deab19198.wav"
+        },
+        {
+          "assetId": "7fb0062867f1a87be9b66a8a123bdc0c",
+          "name": "replace right sound",
+          "dataFormat": "wav",
+          "rate": 44100,
+          "sampleCount": 10285,
+          "md5ext": "7fb0062867f1a87be9b66a8a123bdc0c.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 1,
+      "visible": true,
+      "x": 130,
+      "y": -80,
+      "size": 80,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    },
+    {
+      "isStage": false,
+      "name": "Sprite1",
+      "variables": {},
+      "lists": {},
+      "broadcasts": {},
+      "blocks": {
+        ".g7UB6sRwR8+kEZ[Vc8b": {
+          "opcode": "event_whenflagclicked",
+          "next": "~|)]47?9|6DvIn.qM],-",
+          "parent": null,
+          "inputs": {},
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 72,
+          "y": 66
+        },
+        "U+=x1*gxLAT12[|,/V]B": {
+          "opcode": "control_forever",
+          "next": null,
+          "parent": "~|)]47?9|6DvIn.qM],-",
+          "inputs": {
+            "SUBSTACK": [
+              2,
+              "M-g]zr=`PD8/;vB`ip*7"
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "M-g]zr=`PD8/;vB`ip*7": {
+          "opcode": "looks_changesizeby",
+          "next": "mQ=WS^|e[2ZD@2J-V,#t",
+          "parent": "U+=x1*gxLAT12[|,/V]B",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "f#rPv98b9.I+WKkHku%/": {
+          "opcode": "looks_changesizeby",
+          "next": "A4-9ISAk*#!)e:H|/c:t",
+          "parent": "mQ=WS^|e[2ZD@2J-V,#t",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "-2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "en|T2js26uVQ5o@xR{T7": {
+          "opcode": "looks_changesizeby",
+          "next": "~?r;[}5#O*}X/[+$M1|/",
+          "parent": "zZFppO6re5}gMs$ad9lJ",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "-2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "xV]Sh,v!,]G+gr`%*PTE": {
+          "opcode": "looks_changesizeby",
+          "next": "zZFppO6re5}gMs$ad9lJ",
+          "parent": "A4-9ISAk*#!)e:H|/c:t",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "-2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "xa{%k[.-q3*@`[0)UQsg": {
+          "opcode": "looks_changesizeby",
+          "next": "2f_DA_g0%wW{1Ed9){op",
+          "parent": "~?r;[}5#O*}X/[+$M1|/",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "-2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "~?r;[}5#O*}X/[+$M1|/": {
+          "opcode": "control_wait",
+          "next": "xa{%k[.-q3*@`[0)UQsg",
+          "parent": "en|T2js26uVQ5o@xR{T7",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.03"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "mQ=WS^|e[2ZD@2J-V,#t": {
+          "opcode": "control_wait",
+          "next": "f#rPv98b9.I+WKkHku%/",
+          "parent": "M-g]zr=`PD8/;vB`ip*7",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.03"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "zZFppO6re5}gMs$ad9lJ": {
+          "opcode": "control_wait",
+          "next": "en|T2js26uVQ5o@xR{T7",
+          "parent": "xV]Sh,v!,]G+gr`%*PTE",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.03"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "A4-9ISAk*#!)e:H|/c:t": {
+          "opcode": "control_wait",
+          "next": "xV]Sh,v!,]G+gr`%*PTE",
+          "parent": "f#rPv98b9.I+WKkHku%/",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.03"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "2f_DA_g0%wW{1Ed9){op": {
+          "opcode": "control_wait",
+          "next": "ZS2h_mu_4z?:H?a1xw6*",
+          "parent": "xa{%k[.-q3*@`[0)UQsg",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.03"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "Gr3TEHcXsjTb45g#IHWv": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": null,
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "0.33"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": true,
+          "x": 348,
+          "y": 723
+        },
+        "ZS2h_mu_4z?:H?a1xw6*": {
+          "opcode": "looks_changesizeby",
+          "next": "-K__-T-:/i8X5e1hzs2V",
+          "parent": "2f_DA_g0%wW{1Ed9){op",
+          "inputs": {
+            "CHANGE": [
+              1,
+              [
+                4,
+                "-2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "-K__-T-:/i8X5e1hzs2V": {
+          "opcode": "control_wait",
+          "next": null,
+          "parent": "ZS2h_mu_4z?:H?a1xw6*",
+          "inputs": {
+            "DURATION": [
+              1,
+              [
+                5,
+                "1.2"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        },
+        "~|)]47?9|6DvIn.qM],-": {
+          "opcode": "looks_setsizeto",
+          "next": "U+=x1*gxLAT12[|,/V]B",
+          "parent": ".g7UB6sRwR8+kEZ[Vc8b",
+          "inputs": {
+            "SIZE": [
+              1,
+              [
+                4,
+                "100"
+              ]
+            ]
+          },
+          "fields": {},
+          "shadow": false,
+          "topLevel": false
+        }
+      },
+      "comments": {},
+      "currentCostume": 0,
+      "costumes": [
+        {
+          "assetId": "833733c9b2d718aceae05d8cd692f4b7",
+          "name": "costume1",
+          "bitmapResolution": 1,
+          "md5ext": "833733c9b2d718aceae05d8cd692f4b7.svg",
+          "dataFormat": "svg",
+          "rotationCenterX": 238.74837986457203,
+          "rotationCenterY": 149.08587999999997
+        }
+      ],
+      "sounds": [
+        {
+          "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+          "name": "pop",
+          "dataFormat": "wav",
+          "format": "",
+          "rate": 44100,
+          "sampleCount": 1032,
+          "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }
+      ],
+      "volume": 100,
+      "layerOrder": 2,
+      "visible": true,
+      "x": 36,
+      "y": 28,
+      "size": 100,
+      "direction": 90,
+      "draggable": false,
+      "rotationStyle": "all around"
+    }
+  ],
+  "monitors": [],
+  "extensions": [],
+  "meta": {
+    "semver": "3.0.0",
+    "vm": "0.2.0-prerelease.20211110140254",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15"
+  }
+}
