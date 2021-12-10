@@ -26,12 +26,12 @@ class App extends Component {
   }
 
   render() {
-    const projects = this.state.projects
+    const projects = this.state.projects.sort()
       .filter((project) =>
         project.title
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
-      ).sort()
+      )
 
     return (
       <Layout>
