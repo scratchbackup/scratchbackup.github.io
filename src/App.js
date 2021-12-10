@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   render() {
-    const projects = this.state.projects.sort()
+    const projects = this.state.projects
       .filter((project) =>
         project.title
           .toLowerCase()
