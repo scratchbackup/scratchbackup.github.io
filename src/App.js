@@ -3,11 +3,9 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Layout } from "./components/Layout";
 import { Main } from "./components/Main";
-function preventTags(str) {
-    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') ;
-}
 var showID = true
 function toggleID() {
+    var IDShowHandler = document.getElementById("idtogg");
     if (showID == true) {
         showID = false
     } else {
@@ -85,7 +83,7 @@ class App extends Component {
             </div>
             <div className="form-item">
                 <label htmlFor="showID">Show Project ID</label>
-                <button name="showID" onclick="toggleID()">Toggle Project IDs</button></div>
+                <button id="idtogg" name="showID" onSubmit="toggleID()">Toggle Project IDs</button></div>
           </div>
 
           <h3>Results</h3>
