@@ -110,7 +110,7 @@ class App extends Component {
                       <tr key={project.id}>
                         <td>{showID ? project.id : "-"}</td>
                         <td>{project.title}</td>
-                        <td style={{backgroundColor: project.color}}><a href={`https://scratch.mit.edu/users/${project.author}`}><img src={project.pfp.replace("60x60", "45x45").replace("50x50", "45x45")} className="pfp"></img><span className="verticalcenter">{" "}{project.author}</span></a></td>  
+                        <td style={{backgroundColor: project.color}}><a href={`https://scratch.mit.edu/users/${project.author}`}><img src={project.pfp.replace("60x60", "45x45").replace("50x50", "45x45")} className="pfp"></img><span className="verticalcenter">{" "}{author}</span></a></td>  
                         <td>
                           {created.toLocaleDateString()}{" "}
                           {created.toLocaleTimeString()}
