@@ -47,6 +47,9 @@ a:hover {
   width: 45px;
   height: 45px;
 }
+.scrolling {
+  overflow-x: auto
+}
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr;
