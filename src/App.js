@@ -109,7 +109,7 @@ class App extends Component {
                     return (
                       <tr key={project.id}>
                         <td>{project.id}</td>
-                        <td><span className="scrolling maxwidth" style={{alignContent: 'center'}}>{project.title}</span>
+                        <td><span className="scrolling" style={{alignContent: 'center', width: 240}}>{project.title}</span>
                           <hr />
                           <img src={`projects/${project.id}/thumbnail.png`} style={{width: 240, height: 180}}></img>
                         </td>
