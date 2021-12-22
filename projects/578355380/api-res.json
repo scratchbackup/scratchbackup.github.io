@@ -1,0 +1,42 @@
+{
+  "id": 578355380,
+  "title": "RHCS: Fresher's CTF",
+  "description": "",
+  "instructions": "This was Challenge 19 for the RHUL Computing Society Fresher's CTF\nContestants must reconstruct the flag based on the source code - Can you find the flag?\n\nFormat: Header + 8 hex characters\nCSCTFFLAG[aaaaaaaa]\n\nSolution is found as a comment inside the source code.",
+  "visibility": "visible",
+  "public": true,
+  "comments_allowed": true,
+  "is_published": true,
+  "author": {
+    "id": 28464992,
+    "username": "7coil",
+    "scratchteam": false,
+    "history": { "joined": "1900-01-01T00:00:00.000Z" },
+    "profile": {
+      "id": null,
+      "images": {
+        "90x90": "https://cdn2.scratch.mit.edu/get_image/user/28464992_90x90.png?v=",
+        "60x60": "https://cdn2.scratch.mit.edu/get_image/user/28464992_60x60.png?v=",
+        "55x55": "https://cdn2.scratch.mit.edu/get_image/user/28464992_55x55.png?v=",
+        "50x50": "https://cdn2.scratch.mit.edu/get_image/user/28464992_50x50.png?v=",
+        "32x32": "https://cdn2.scratch.mit.edu/get_image/user/28464992_32x32.png?v="
+      }
+    }
+  },
+  "image": "https://cdn2.scratch.mit.edu/get_image/project/578355380_480x360.png",
+  "images": {
+    "282x218": "https://cdn2.scratch.mit.edu/get_image/project/578355380_282x218.png?v=1633527557",
+    "216x163": "https://cdn2.scratch.mit.edu/get_image/project/578355380_216x163.png?v=1633527557",
+    "200x200": "https://cdn2.scratch.mit.edu/get_image/project/578355380_200x200.png?v=1633527557",
+    "144x108": "https://cdn2.scratch.mit.edu/get_image/project/578355380_144x108.png?v=1633527557",
+    "135x102": "https://cdn2.scratch.mit.edu/get_image/project/578355380_135x102.png?v=1633527557",
+    "100x80": "https://cdn2.scratch.mit.edu/get_image/project/578355380_100x80.png?v=1633527557"
+  },
+  "history": {
+    "created": "2021-10-02T17:06:02.000Z",
+    "modified": "2021-10-06T13:39:17.000Z",
+    "shared": "2021-10-02T18:03:39.000Z"
+  },
+  "stats": { "views": 27, "loves": 1, "favorites": 1, "remixes": 0 },
+  "remix": { "parent": null, "root": null }
+}
