@@ -134,7 +134,7 @@
         ],
         "ZZUaYLWfV(1c.MZYOUhe": [
           "☁ record",
-          "59",
+          "54",
           true
         ]
       },
@@ -2638,10 +2638,10 @@
       "currentCostume": 0,
       "costumes": [
         {
-          "assetId": "83913bcef7755b3786b826ceab8c0ab0",
+          "assetId": "1a9e3dcc1066da5edc26808ac5cacfb9",
           "name": "backdrop1",
           "bitmapResolution": 1,
-          "md5ext": "83913bcef7755b3786b826ceab8c0ab0.svg",
+          "md5ext": "1a9e3dcc1066da5edc26808ac5cacfb9.svg",
           "dataFormat": "svg",
           "rotationCenterX": 251,
           "rotationCenterY": 188
@@ -67455,7 +67455,7 @@
       "isDiscrete": true
     },
     {
-      "id": "dO89d}b7`~ZXtv3BVHUb_costumenumbername_number",
+      "id": ".au}?aQ7cjUt(L:E{|B}_costumenumbername_number",
       "mode": "default",
       "opcode": "looks_costumenumbername",
       "params": {
@@ -67473,7 +67473,7 @@
       "isDiscrete": true
     },
     {
-      "id": "dO89d}b7`~ZXtv3BVHUb_costumenumbername_name",
+      "id": ".au}?aQ7cjUt(L:E{|B}_costumenumbername_name",
       "mode": "default",
       "opcode": "looks_costumenumbername",
       "params": {
@@ -67563,7 +67563,7 @@
       "isDiscrete": true
     },
     {
-      "id": "^9bIW2o%a4QXK[EtcX,H_costumenumbername_number",
+      "id": "N_i5#ROmUp8SY1Nzxeh1_costumenumbername_number",
       "mode": "default",
       "opcode": "looks_costumenumbername",
       "params": {
@@ -68516,7 +68516,7 @@
   "extensions": [],
   "meta": {
     "semver": "3.0.0",
-    "vm": "0.2.0-prerelease.20210706190652",
-    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100101 Firefox/89.0"
+    "vm": "0.2.0-prerelease.20211110140254",
+    "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:95.0) Gecko/20100101 Firefox/95.0"
   }
 }
