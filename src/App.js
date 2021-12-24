@@ -83,7 +83,7 @@ class App extends Component {
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Name</th>
+                  <th style={{width: 240}}>Name</th>
                   <th>Creator</th>
                   <th>Created</th>
                   <th>Modified</th>
