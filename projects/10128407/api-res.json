@@ -1,0 +1,47 @@
+{
+  "id": 10128407,
+  "title": "Paper Minecraft v11.6 (Minecraft 2D)",
+  "description": "Sorry too many comments are causing the scratch servers to wobble... Commenting has had to be temporarily disabled!\n\n★ Subscribe to me on YouTube for our my helpful videos on Scratch coding :) - Search up \"griffpatch\".\n\n★ Scratch auto disabled comments on this project because it was slowing things down :(\n\n28 Oct 2021 - v11.6 - Fixed offscreen sprites, Fixed 16 & 18 numbers switched, Updated buttons on main screen.\n17 Mar 2020 - v11.5 - Tidied costumes removing nasty ghost outlines, added support for scratch 3 scrolling off screen workaround, fixed tile misaligned glitch, added a couple of missing costumes, fixed hunger system.\n17 Mar 2020 - v11.4 - Updated splash page\n8 Dec 2015 - 6 MILLION VIEWS *grin*\n15 Sep 2015 - 5 MILLION VIEWS! Gosh :)\n14 Jan 2015 - v11.3 - ★ Updated Save Game code to incorporate @TheLogFather 's clever method of bypassing the 10k string (and therefore save game) limit.\n\n15 Dec 2014 - v11.2 - ★ Rain weather (New command '/weather <rain, snow, clear>'.\n\n12 Dec 2014 - v11.1 - ★ Snow weather (it can now snow in most biomes, and the snow will start to settle...).\n\n12 Dec 2014 - v11.0 - ★ Snowy Biomes... (1 in 10 so get looking!)\n\n11 Dec 2014 - v10.9 - ★ Endermen (initial version)\n\n10 Dec 2014 - v10.8 - ★ Villagers naturally spawn in villages, ★ Villagers like to be in their houses at night, ★ Villagers open and close wooden doors, ★ Fixed mob attack distance bug.\n\n09 Dec 2014 - v10.7 - ★ Zombie Pigmen Spawn Eggs, ★ Villager Spawn Eggs (Still more to do on these mobs)\n\n08 Dec 2014 - v10.6b - ★ Naturally spawning villages (no villagers yet), ★ More reliable game startup, ★ Simple pause screen [p], ★ Fixed death respawn bug, ★ Added Sprinting (hold down shift or control)\n\n06 Dec 2014 - v10.5 - Added skin selection to New Game screen, and saved skin selection with saved games (or /skin command).\n\n04 Dec 2014 - v10.2 - There are now 4 spawnable village buildings, plus I've added the fence post block (you can place this by placing a fence at the point you are standing rather than to the side)\n\n02 Dec 2014 - Scratch Team silently placed a limit on the notes and credits section so I've removed my change log :(.\n\n01 Dec 2014 - v10.0 - We made it! Made it to version 10 woop! After all that work I am feeling strangely hungry?\n\nThe mechanics of hunger --> ★ Steve has 20 hunger points (displayed as 10 chops), ★ Steve has 80 food saturation points (which are not displayed), ★ As you walk, jump and mine, your food saturation points are reduced, ★ Once the saturation drops to 0, you begin to lose hunger points, ★ Eating food increases both the food saturation points and the hunger bar together, ★ The outcome of this? - Eat 3 healthy meals a day *grin* - snacking food will cause you to be hungry again much sooner! ★ Health now only regenerated when you have 18 or more hunger points, ★ Health depletes when you have 0 hunger points.\n\n14 Oct 2014 - 2 MILLION VIEWS! That's Awesome!\n23 July 2014 - Passed 1,500,000 Views... wow! :)\n08 May 2014 - 1 million views!!! YAY!!! Thanks everyone :)\n13 May 2013 - v2.0 - Initial Release.\n\n*** Credits ***\nAll the graphics are taken from the Minecraft wiki page and have not been created by me.  I have rescaled them and broken them up to make the game work, but that is it at present.",
+  "instructions": "[1 to 9] - Select Item    [Click] - Place or Mine\n[WASD] - Move / Jump  [E] - Open/Close Inventory\n[E+hover] - Open / Close Chest, Crafting Table, Door\n[Space] - Drop single tile from a stack while dragging.\n[F] - Eat food       [N] - Label a sign or chest\n[Q] - Drop item      [P] - Pause / Unpause\n[T] - Talk / Command    [O] - Save your game\n[M] - Music / Sounds   [Shift] - Sprint\n\nAs of Dec 2014 this project is getting 11,000 view a day (that's one view every 8 seconds 24/7) isn't that a little crazy!",
+  "visibility": "visible",
+  "public": true,
+  "comments_allowed": false,
+  "is_published": true,
+  "author": {
+    "id": 1882674,
+    "username": "griffpatch",
+    "scratchteam": false,
+    "history": { "joined": "1900-01-01T00:00:00.000Z" },
+    "profile": {
+      "id": null,
+      "images": {
+        "90x90": "https://cdn2.scratch.mit.edu/get_image/user/1882674_90x90.png?v=",
+        "60x60": "https://cdn2.scratch.mit.edu/get_image/user/1882674_60x60.png?v=",
+        "55x55": "https://cdn2.scratch.mit.edu/get_image/user/1882674_55x55.png?v=",
+        "50x50": "https://cdn2.scratch.mit.edu/get_image/user/1882674_50x50.png?v=",
+        "32x32": "https://cdn2.scratch.mit.edu/get_image/user/1882674_32x32.png?v="
+      }
+    }
+  },
+  "image": "https://cdn2.scratch.mit.edu/get_image/project/10128407_480x360.png",
+  "images": {
+    "282x218": "https://cdn2.scratch.mit.edu/get_image/project/10128407_282x218.png?v=1635773464",
+    "216x163": "https://cdn2.scratch.mit.edu/get_image/project/10128407_216x163.png?v=1635773464",
+    "200x200": "https://cdn2.scratch.mit.edu/get_image/project/10128407_200x200.png?v=1635773464",
+    "144x108": "https://cdn2.scratch.mit.edu/get_image/project/10128407_144x108.png?v=1635773464",
+    "135x102": "https://cdn2.scratch.mit.edu/get_image/project/10128407_135x102.png?v=1635773464",
+    "100x80": "https://cdn2.scratch.mit.edu/get_image/project/10128407_100x80.png?v=1635773464"
+  },
+  "history": {
+    "created": "2013-05-04T19:56:50.000Z",
+    "modified": "2021-11-01T13:31:04.000Z",
+    "shared": "2014-12-01T12:55:01.000Z"
+  },
+  "stats": {
+    "views": 45134538,
+    "loves": 321340,
+    "favorites": 286518,
+    "remixes": 38772
+  },
+  "remix": { "parent": null, "root": null }
+}
