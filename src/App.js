@@ -37,7 +37,7 @@ class App extends Component {
       <Layout>
         <Header>ScratchBackup</Header>
         <Main>
-          <h2>What is ScratchBackup?</h2>
+          <article><h2>What is ScratchBackup?</h2>
           <p>
             ScratchBackup is a tool that automatically pulls your code every 30
             minutes and publishes it to GitHub.
@@ -57,7 +57,7 @@ class App extends Component {
             the project as a ".sb" or ".json" file and importing it into
             Scratch.
           </p>
-
+          </article>
           <h2>Projects</h2>
 
           <h3>Search Options</h3>
