@@ -24,6 +24,10 @@ a:hover {
     padding: 0.25em 0.5em;
     width: 240px;
   }
+  
+  th {
+    width: 240px;
+  }
 
   tr:nth-child(even) {
     background-color: #0d0d0d;
