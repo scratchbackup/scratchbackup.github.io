@@ -86,10 +86,21 @@ const saveProject = async (id) => {
     `https://cdn2.scratch.mit.edu/get_image/project/${id}_480x360.png`,
     "thumbnail.png"
   );
-  const metadata = await saveJSON(
+  const metadata = (id, version) => {try {return await saveJSON(
     `https://api.scratch.mit.edu/projects/${id}/`,
     "api-res.json"
-  );
+  ); catch {return JSON.stringify(
+    {
+      "id": id,
+      title: `Unshared Project ${id}`,
+      author: '-',
+      pfp: 'https://cdn2.scratch.mit.edu/get_image/user/22551_60x60.png?v=',
+      color: null,
+      created: '-',
+      modified: '-',
+      version,
+    }, null, 2);
+    };
   const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
     'status.json'
