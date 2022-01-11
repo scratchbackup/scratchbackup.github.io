@@ -86,7 +86,7 @@ const saveProject = async (id) => {
     `https://cdn2.scratch.mit.edu/get_image/project/${id}_480x360.png`,
     "thumbnail.png"
   );
-  const metadata = function(id, version) {try {return await saveJSON(
+  const metadata = async function(id, version) {try {return await saveJSON(
     `https://api.scratch.mit.edu/projects/${id}/`,
     "api-res.json"
   ); catch {return JSON.stringify(
