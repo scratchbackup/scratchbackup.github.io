@@ -22,6 +22,7 @@ a:hover {
 .table {
   td {
     padding: 0.25em 0.5em;
+    width: 240px;
   }
 
   tr:nth-child(even) {
@@ -29,7 +30,7 @@ a:hover {
   }
 
   display: block;
-  overflow-x: auto;
+  overflow-x: wrap;
   white-space: nowrap;
 }
 
