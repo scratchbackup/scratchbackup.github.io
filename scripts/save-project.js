@@ -99,13 +99,11 @@ const saveProject = async (id) => {
     {
       "id": id,
       title: `Unshared Project ${id}`,
-      author: '-',
+      author: {username: '-', profile: {images: {'60x60': 'https://cdn2.scratch.mit.edu/get_image/user/22551_60x60.png?v'}}},
       pfp: 'https://cdn2.scratch.mit.edu/get_image/user/22551_60x60.png?v=',
-      color: null,
-      created: '-',
-      modified: '-',
-      version,
-    }, null, 2);
+      history: {created: '-', modified: '-'}
+    }
+      );
     }
   };
   const ocularStats = await saveJSON(
