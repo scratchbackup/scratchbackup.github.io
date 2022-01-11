@@ -89,7 +89,7 @@ const saveProject = async (id) => {
   const metadata = async function(id, version) {try {return await saveJSON(
     `https://api.scratch.mit.edu/projects/${id}/`,
     "api-res.json"
-  ); catch {return JSON.stringify(
+  );} catch {return JSON.stringify(
     {
       "id": id,
       title: `Unshared Project ${id}`,
