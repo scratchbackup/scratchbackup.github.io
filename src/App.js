@@ -102,9 +102,9 @@ class App extends Component {
                 )}
                 {
                   projects.map((project) => {
-                    const created = new Date(project.created);
-                    const modified = new Date(project.modified);
-                    const author = project.author;
+                    const created = new Date(project.created || '-');
+                    const modified = new Date(project.modified || '-');
+                    const author = project.author || '-';
 
                     return (
                       <tr key={project.id}>
