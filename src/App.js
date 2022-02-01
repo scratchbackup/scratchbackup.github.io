@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("./projects.json")
+    fetch("projects.json")
       .then((res) => res.json())
       .then((data) => {
         this.setState({
@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     const projects = this.state.projects
       .filter((project) =>
-        project.title
+        String(project.title)
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
       )
