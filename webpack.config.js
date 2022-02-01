@@ -44,7 +44,8 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: './src/index.html' },
-        { from: './resources' }
+        { from: './resources' },
+        { from: './projects.json' }
       ]
     })
   ],
