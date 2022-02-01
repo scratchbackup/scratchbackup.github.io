@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("projects.json")
+    fetch("./projects.json")
       .then((res) => res.json())
       .then((data) => {
         this.setState({
@@ -104,7 +104,7 @@ class App extends Component {
                   projects.map((project) => {
                     const created = new Date(project.created || '-');
                     const modified = new Date(project.modified || '-');
-                    const author = project.author || '-';
+                    const author = String(project.author || '-');
 
                     return (
                       <tr key={project.id}>
