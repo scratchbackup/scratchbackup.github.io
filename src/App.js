@@ -25,7 +25,8 @@ class App extends Component {
       });
   }
 
-  try { render() {
+  render() {
+    try {
     const projects = this.state.projects
       .filter((project) =>
         project.title
@@ -195,7 +196,10 @@ class App extends Component {
         </Footer>
       </Layout>
     );
+  } finally {
+    null
   }
-}} finally {null}
+  }
+}
 
 export { App };
