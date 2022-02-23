@@ -105,11 +105,13 @@ const saveProject = async (id) => {
       );
     }
   }(id);
-  if (metadata.author.username) {
+  try {
     const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
     'ocular.json'
     );
+  } catch {
+    console.warn("Could not retrieve ocular stats.")
   }
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
