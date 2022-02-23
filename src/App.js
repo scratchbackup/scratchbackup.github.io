@@ -29,9 +29,7 @@ class App extends Component {
     try {
     const projects = this.state.projects
       .filter((project) =>
-        String(project.title)
-          .toLowerCase()
-          .includes(this.state.nameSearch.toLowerCase())
+        String(project.title).toLowerCase().includes(this.state.nameSearch.toLowerCase())
       )
 
     return (
@@ -70,7 +68,7 @@ class App extends Component {
                 placeholder="Enter a name of a project to search for"
                 value={this.state.nameSearch}
                 type="search"
-                onChange={(e) => this.setState({ nameSearch: e.target.value })}
+                onChange="{(e) => this.setState({ nameSearch: e.target.value })}"
               ></input>
             </div>
           </div>
@@ -181,7 +179,7 @@ class App extends Component {
             </table>
           )}
           <p>
-            <small>All date/times are for your region.</small>
+            <small>All dates and times are for your region.</small>
           </p>
         </Main>
         <Footer>
@@ -197,7 +195,7 @@ class App extends Component {
       </Layout>
     );
   } finally {
-    null
+    return null
   }
   }
 }
