@@ -98,18 +98,17 @@ const saveProject = async (id) => {
       return JSON.stringify(
     {
       "id": id,
-      title: `Unshared Project ${id}`,
+      title: `Project #${id}`,
       author: {username: '-', profile: {images: {'60x60': 'https://cdn2.scratch.mit.edu/get_image/user/22551_60x60.png?v'}}},
-      pfp: 'https://cdn2.scratch.mit.edu/get_image/user/22551_60x60.png?v=',
       history: {created: '-', modified: '-'}
     }
       );
     }
   }(id);
-  const ocularStats = await saveJSON(
+  if (metadata.author.username) const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
-    'status.json'
-  )
+    'ocular.json'
+  );
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
