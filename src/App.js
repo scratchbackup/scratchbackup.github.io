@@ -28,9 +28,17 @@ class App extends Component {
   render() {
     const projects = this.state.projects
       .filter((project) =>
-        project.title
-          .toLowerCase()
-          .includes(this.state.nameSearch.toLowerCase())
+              {
+                try {
+                  project.title
+                  .toLowerCase()
+                  .includes(this.state.nameSearch.toLowerCase()
+                }
+                catch {
+                  return false        
+                }
+              }
+             )
       )
 
     return (
