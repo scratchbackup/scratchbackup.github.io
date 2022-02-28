@@ -30,7 +30,7 @@ class App extends Component {
       .filter(project => function(project)
               {
                 try {
-                  project.title
+                  return project.title
                   .toLowerCase()
                   .includes(this.state.nameSearch.toLowerCase()
                 }
