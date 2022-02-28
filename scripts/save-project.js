@@ -1,7 +1,7 @@
 const prettier = require("prettier");
 const fs = require("fs");
 const path = require("path");
-const fetch = require('node-fetch');
+const fetch = require("node-fetch");
 
 // The location of the dist directory.
 const DIST_PATH = path.resolve(__dirname, "..", "dist");
@@ -9,6 +9,7 @@ const SCRATCH1_START = Buffer.from("ScratchV01");
 
 const saveProject = async (id) => {
   const PROJECT_FOLDER = path.resolve(DIST_PATH, "projects", id);
+
   const checkForErrors = async (res) => {
     if (res.ok) return;
     throw new Error(`Cannot fetch ${res.url} because of error ${res.status}`);
@@ -86,33 +87,14 @@ const saveProject = async (id) => {
     `https://cdn2.scratch.mit.edu/get_image/project/${id}_480x360.png`,
     "thumbnail.png"
   );
-  const metadata = async function(id) {
-    try {
-      return await saveJSON(
+  const metadata = await saveJSON(
     `https://api.scratch.mit.edu/projects/${id}/`,
     "api-res.json"
   );
-    } 
-    catch 
-    {
-      return JSON.stringify(
-    {
-      "id": id,
-      title: `Project #${id}`,
-      author: {username: '-', profile: {images: {'60x60': 'https://cdn2.scratch.mit.edu/get_image/user/22551_60x60.png?v'}}},
-      history: {created: '-', modified: '-'}
-    }
-      );
-    }
-  }(id);
-  try {
-    const ocularStats = await saveJSON(
+  const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
-    'ocular.json'
-    );
-  } catch {
-    console.warn("Could not retrieve ocular stats.")
-  }
+    'status.json'
+  )
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
