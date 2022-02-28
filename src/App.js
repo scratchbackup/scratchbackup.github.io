@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("projects.json")
+    fetch("./projects.json")
       .then((res) => res.json())
       .then((data) => {
         this.setState({
@@ -27,7 +27,7 @@ class App extends Component {
 
   render() {
     const projects = this.state.projects
-      .filter((project) =>
+      .filter(project => function(project)
               {
                 try {
                   project.title
@@ -37,7 +37,7 @@ class App extends Component {
                 catch {
                   return false        
                 }
-              }
+              }(project)
              )
       )
 
