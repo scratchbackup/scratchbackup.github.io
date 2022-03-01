@@ -27,13 +27,13 @@ class App extends Component {
 
   render() {
     const checkTitle = function(project) {
-      try {
-        return project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase() } catch {
-        return false;      
+      if (!project.title) {
+        return false;
+      } else {
+        return (project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase())}  
       }
     }
-    const projects = this.state.projects
-      .filter(project => checkTitle(project))
+    const projects = this.state.projects.filter(checkTitle)
 
     return (
       <Layout>
