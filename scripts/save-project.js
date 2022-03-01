@@ -11,7 +11,7 @@ const saveProject = async (id) => {
   const PROJECT_FOLDER = path.resolve(DIST_PATH, "projects", id);
 
   const checkForErrors = async (res) => {
-    if (res.ok) return;
+    if (res.ok || res == 200) return;
     throw new Error(`Cannot fetch ${res.url} because of error ${res.status}`);
   };
 
@@ -60,19 +60,22 @@ const saveProject = async (id) => {
       filename = "project.sb";
 
       fs.writeFileSync(path.resolve(PROJECT_FOLDER, filename), buffer);
-      return "1.4"
+      return "1.4";
     }
 
     const text = buffer.toString();
     const parsed = JSON.parse(text);
-    
+
     if (parsed.info) {
       version = "2.0";
     } else if (parsed.meta) {
       version = "3.0";
     }
 
-    fs.writeFileSync(path.resolve(PROJECT_FOLDER, filename), JSON.stringify(parsed, null, 2));
+    fs.writeFileSync(
+      path.resolve(PROJECT_FOLDER, filename),
+      JSON.stringify(parsed, null, 2)
+    );
 
     return version;
   };
@@ -93,19 +96,19 @@ const saveProject = async (id) => {
   );
   const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
-    'status.json'
-  )
+    "status.json"
+  );
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
       {
-        id: metadata.id,
-        title: (metadata.title || `Untitled Project ${metadata.id}`),
-        author: (metadata.author.username || 'Unknown'),
-        pfp: metadata.author.profile.images['60x60'],
-        color: (ocularStats.color || false),
-        created: metadata.history.created,
-        modified: metadata.history.modified,
+        id: Int(id),
+        title: metadata.title || `Untitled Project ${id}`,
+        author: metadata.author.username || "Unknown",
+        pfp: metadata.author.profile.images["60x60"],
+        color: ocularStats.color || false,
+        created: metadata.history.created || `Before project ${id+1}`,
+        modified: metadata.history.modified || '???',
         version,
       },
       null,
@@ -114,7 +117,7 @@ const saveProject = async (id) => {
     { encoding: "utf-8" }
   );
 
-  // This doesn't actually save SB3 files!
+  // This doesn't actually save SB3 files! It saves JSONs.
   // Try again later.
   // saveBlob(`https://projects.scratch.mit.edu/${id}/`, 'project.sb3')
 };
