@@ -1,0 +1,20 @@
+name: Update Lock
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2.4.0
+    - name: Update lockfile
+      run: yarn install
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update package-lock.JSON
