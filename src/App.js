@@ -30,7 +30,7 @@ class App extends Component {
       if (!project.title) {
         return false;
       } else {
-        return (project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase())}  
+        return (project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase()))
       }
     }
     const projects = this.state.projects.filter(checkTitle)
