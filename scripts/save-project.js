@@ -11,8 +11,8 @@ const saveProject = async (id) => {
   const PROJECT_FOLDER = path.resolve(DIST_PATH, "projects", id);
 
   const checkForErrors = async (res) => {
-    if (res.ok || res == 200) return;
-    throw new Error(`Cannot fetch ${res.url} because of error ${res.status}`);
+    if ((res.ok) || (res.status == 200)) return;
+    throw new Error(`Cannot use ${res.url} because of error ${res.status}`);
   };
 
   const saveJSON = async (url, filename) => {
@@ -102,7 +102,7 @@ const saveProject = async (id) => {
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
       {
-        id: Int(id),
+        id: Integer(id),
         title: metadata.title || `Untitled Project ${id}`,
         author: metadata.author.username || "Unknown",
         pfp: metadata.author.profile.images["60x60"],
