@@ -36,7 +36,7 @@ class App extends Component {
       }
     }
     const projects = this.state.projects
-      .filter(project => checkTitle)
+      .filter(project => checkTitle(project))
 
     return (
       <Layout>
@@ -99,7 +99,7 @@ class App extends Component {
               <tbody>
                 {projects.length === 0 && (
                   <tr>
-                    <td colSpan="6">
+                    <td colSpan="7">
                       There are no results to your search query. Consider
                       broadening your search.
                     </td>
