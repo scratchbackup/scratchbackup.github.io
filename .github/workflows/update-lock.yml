@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: '17.x'
     - name: Update lockfile
-      run: yarn up '*'
+      run: yarn upgrade --latest
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
