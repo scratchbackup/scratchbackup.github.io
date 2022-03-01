@@ -26,12 +26,9 @@ class App extends Component {
   }
 
   render() {
-    function checkTitle(project) {
+    const checkTitle = function(project) {
       try {
-        return project.title
-                  .toLowerCase()
-                  .includes(this.state.nameSearch.toLowerCase();
-      } catch {
+        return project.title.toLowerCase().includes(this.state.nameSearch.toLowerCase() } catch {
         return false;      
       }
     }
