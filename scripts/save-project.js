@@ -11,7 +11,7 @@ const saveProject = async (id) => {
   const PROJECT_FOLDER = path.resolve(DIST_PATH, "projects", id);
 
   const checkForErrors = async (res) => {
-    if ((res.ok) || (res.status == 200)) return;
+    if (res.status == 200) return;
     throw new Error(`Cannot use ${res.url} because of error ${res.status}`);
   };
 
