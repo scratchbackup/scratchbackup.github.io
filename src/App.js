@@ -30,9 +30,9 @@ class App extends Component {
       try {
         return project.title
                   .toLowerCase()
-                  .includes(this.state.nameSearch.toLowerCase()
+                  .includes(this.state.nameSearch.toLowerCase();
       } catch {
-        return false        
+        return false;      
       }
     }
     const projects = this.state.projects
