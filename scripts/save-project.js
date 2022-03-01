@@ -47,7 +47,15 @@ const saveProject = async (id) => {
     const res = await fetch(url);
     await checkForErrors(res);
 
-    const buffer = await res.buffer();
+    try {
+      const buffer = await res.buffer();
+    } catch {
+      try {
+        const buffer = await res.buffer();
+      } catch {
+        throw new ReferenceError('Cannot create buffer of result')
+      }
+    }
     const comparison = buffer.compare(
       SCRATCH1_START,
       undefined,
