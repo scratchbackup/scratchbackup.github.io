@@ -39,7 +39,7 @@ const saveProject = async (id) => {
       writeStream.on("finish", resolve);
     });
   };
-
+  var preText;
   const saveProjectFile = async (url) => {
     let filename = "project.json";
     let version = "unknown";
@@ -55,10 +55,10 @@ const saveProject = async (id) => {
       undefined,
       0,
       SCRATCH1_START.length
-    ) || (/^({)$(})/.match(res.text)));
+    ) || (!/^({)$(})/.match(res.body)));
     } catch {
       console.err('Cannot create buffer of result');
-      }
+      preText = res.body;
     }
 
     if (comparison == 0) {
@@ -68,7 +68,7 @@ const saveProject = async (id) => {
       return "1.4";
     }
 
-    const text = buffer.toString();
+    const text = preText || buffer.toString();
     const parsed = JSON.parse(text);
 
     if (parsed.info) {
