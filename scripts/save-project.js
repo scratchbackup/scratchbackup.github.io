@@ -53,7 +53,7 @@ const saveProject = async (id) => {
       try {
         const buffer = await res.buffer();
       } catch {
-        throw new ReferenceError('Cannot create buffer of result')
+        throw new Error('Cannot create buffer of result')
       }
     }
     const comparison = buffer.compare(
