@@ -49,22 +49,19 @@ const saveProject = async (id) => {
 
     try {
       const buffer = await res.buffer();
-    } catch {
-      try {
-        const buffer = await res.buffer();
-      } catch {
-        throw new Error('Cannot create buffer of result')
-      }
-    }
-    const comparison = buffer.compare(
+      const comparison = (buffer.compare(
       SCRATCH1_START,
       undefined,
       undefined,
       0,
       SCRATCH1_START.length
-    );
+    ) || (/^({)$(})/.match(res.text)));
+    } catch {
+      console.err('Cannot create buffer of result');
+      }
+    }
 
-    if (comparison === 0) {
+    if (comparison == 0) {
       filename = "project.sb";
 
       fs.writeFileSync(path.resolve(PROJECT_FOLDER, filename), buffer);
