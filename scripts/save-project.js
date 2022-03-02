@@ -57,7 +57,7 @@ const saveProject = async (id) => {
       SCRATCH1_START.length
     ) || (!/^({)$(})/.match(res.body)));
     } catch {
-      console.err('Cannot create buffer of result');
+      console.error('Cannot create buffer of result');
       preText = res.body;
     }
 
