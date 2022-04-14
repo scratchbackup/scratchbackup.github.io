@@ -2,10 +2,10 @@ import React from "react";
 import { Container } from "../Container";
 import "./index.scss";
 
-const Main = ({ children }) => (
-  <main className="main">
+const Footer = ({ children }) => (
+  <footer className="footer">
     <Container>{children}</Container>
-  </main>
+  </footer>
 );
 
-export { Main };
+export { Footer };

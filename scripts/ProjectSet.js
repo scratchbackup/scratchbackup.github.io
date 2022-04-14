@@ -6,7 +6,7 @@ const PROJECTS_PATH = path.resolve(__dirname, "..", "projects.json");
 
 class ProjectSet {
   hasRead = false;
-  projectSet = new Set()
+  projectSet = new Set();
 
   read() {
     // If the program has already read from the projects file...
@@ -23,11 +23,11 @@ class ProjectSet {
   }
 
   toArray() {
-    return [...this.projectSet]
+    return [...this.projectSet];
   }
 
   has(id) {
-    return this.projectSet.has(id)
+    return this.projectSet.has(id);
   }
 
   add(id) {
@@ -36,7 +36,7 @@ class ProjectSet {
 
   save() {
     // The "null, 2" part prettifies the JSON file
-    fs.writeFileSync(PROJECTS_PATH, JSON.stringify(this.toArray(), null, 2))
+    fs.writeFileSync(PROJECTS_PATH, JSON.stringify(this.toArray(), null, 2));
   }
 }
 

@@ -1,10 +1,7 @@
 ---
 name: assigned scolder
 about: a template to bother me later
-title: ''
-labels: ''
+title: ""
+labels: ""
 assignees: ScolderCreations
-
 ---
-
-

@@ -10,17 +10,17 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2.4.0
-    - name: Setup Yarn
-  # You may pin to the exact commit or the version.
-  # uses: mskelton/setup-yarn@b0673acb4e37f20265fbddbf7567110ebb313605
-      uses: mskelton/setup-yarn@v1.2.1
-      with:
-        node-version: '17.x'
-    - name: Update lockfile
-      run: yarn upgrade --latest
-    - name: Commit
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Update package-lock.JSON
+      - name: Checkout Repository
+        uses: actions/checkout@v2.4.0
+      - name: Setup Yarn
+        # You may pin to the exact commit or the version.
+        # uses: mskelton/setup-yarn@b0673acb4e37f20265fbddbf7567110ebb313605
+        uses: mskelton/setup-yarn@v1.2.1
+        with:
+          node-version: "17.x"
+      - name: Update lockfile
+        run: yarn upgrade --latest
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update package-lock.JSON
