@@ -25,17 +25,17 @@ jobs:
       - name: Run add-project.js
         run: |
           yarn add-project ${{ github.event.inputs.project-id }}
-        
+
       - name: Build Website
         run: |
           yarn build
-      
+
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
         if: github.ref == 'refs/heads/main'
-        
+
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

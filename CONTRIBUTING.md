@@ -1,6 +1,6 @@
 ## Contributing Guidelines
 
-Howdy! Here's a few suggestions for people wanting to collaborate *(this will make prs more likely to be accepted)*
+Howdy! Here's a few suggestions for people wanting to collaborate _(this will make prs more likely to be accepted)_
 
 **1. Try to keep files for projects small**
 

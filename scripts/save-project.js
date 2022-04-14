@@ -2,7 +2,6 @@ const prettier = require("prettier");
 const fs = require("fs");
 const path = require("path");
 const fetch = require("node-fetch");
-const { buffer } = require("buffer")
 
 // The location of the dist directory.
 const DIST_PATH = path.resolve(__dirname, "..", "dist");
@@ -13,13 +12,17 @@ const saveProject = async (id) => {
 
   const checkForErrors = async (res) => {
     if (res.status == 200) return;
-    throw new Error(`Cannot use ${res.url} because of error ${res.status}`);
+    throw new Error(
+      `Cannot use ${res.url} (${id}) because of error ${res.status}`
+    );
   };
 
   const saveJSON = async (url, filename) => {
-    const res = await fetch(url);
+    const res = await fetch.default(url);
     await checkForErrors(res);
+
     const text = await res.text();
+
     const formatted = prettier.format(text, { parser: "json" });
     fs.writeFileSync(path.resolve(PROJECT_FOLDER, filename), formatted, {
       encoding: "utf-8",
@@ -31,7 +34,7 @@ const saveProject = async (id) => {
     const writeStream = fs.createWriteStream(
       path.resolve(PROJECT_FOLDER, filename)
     );
-    const res = await fetch(url);
+    const res = await fetch.default(url);
     await checkForErrors(res);
 
     await new Promise((resolve, reject) => {
@@ -45,20 +48,24 @@ const saveProject = async (id) => {
     let filename = "project.json";
     let version = "unknown";
 
-    const res = await fetch(url);
+    /** @type {import("node-fetch").Response} */
+    const res = await fetch.default(url);
     await checkForErrors(res);
 
+    let comparison;
+    let buffer;
     try {
-      const buffer = await res.buffer();
-      const comparison = (buffer.compare(
-      SCRATCH1_START,
-      undefined,
-      undefined,
-      0,
-      SCRATCH1_START.length
-    ) || (!/^({)$(})/.match(res.body)));
-    } catch {
-      console.error('Cannot create buffer of result');
+      buffer = await res.buffer();
+      comparison =
+        buffer.compare(
+          SCRATCH1_START,
+          undefined,
+          undefined,
+          0,
+          SCRATCH1_START.length
+        );
+    } catch (err) {
+      console.error("Cannot create buffer of result\n", err);
       preText = res.body;
     }
 
@@ -102,19 +109,19 @@ const saveProject = async (id) => {
   );
   const ocularStats = await saveJSON(
     `https://my-ocular.jeffalo.net/api/user/${metadata.author.username}`,
-    "status.json"
+    "ocular-status.json"
   );
   fs.writeFileSync(
     path.resolve(PROJECT_FOLDER, "metadata.json"),
     JSON.stringify(
       {
-        id: Integer(id),
+        id: Number(id),
         title: metadata.title || `Untitled Project ${id}`,
         author: metadata.author.username || "Unknown",
         pfp: metadata.author.profile.images["60x60"],
         color: ocularStats.color || false,
-        created: metadata.history.created || `Before project ${id+1}`,
-        modified: metadata.history.modified || '???',
+        created: metadata.history.created || `Before project ${id + 1}`,
+        modified: metadata.history.modified || "???",
         version,
       },
       null,

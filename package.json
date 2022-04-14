@@ -6,10 +6,14 @@
     "add-project": "node ./scripts/add-project.js",
     "update-projects": "node ./scripts/update-projects.js",
     "build": "webpack",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "dev:update": "nodemon ./scripts/update-projects.js"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "ScolderCreations",
+    "url": "https://scratch.mit.edu/users/ScolderCreations"
+  },
   "license": "CC0",
   "dependencies": {
     "@babel/core": "^7.17.9",
@@ -18,7 +22,7 @@
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
     "follow-redirects": ">=1.14.9",
-    "node-fetch": "1.0.0",
+    "node-fetch": "2.6.1",
     "node-forge": ">=1.3.1",
     "prettier": "^2.6.2",
     "react": "^18.0.0",
@@ -29,7 +33,9 @@
     "webpack": "^5.72.0"
   },
   "devDependencies": {
+    "@types/node-fetch": "^2.6.1",
     "copy-webpack-plugin": "^10.2.4",
+    "nodemon": "^2.0.15",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.8.1"
   }

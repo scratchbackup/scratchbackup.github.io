@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -43,20 +43,20 @@ module.exports = {
   plugins: [
     new CopyPlugin({
       patterns: [
-        { from: './src/index.html' },
-        { from: './static' },
-        { from: './projects.json' }
-      ]
-    })
+        { from: "./src/index.html" },
+        { from: "./static" },
+        { from: "./projects.json" },
+      ],
+    }),
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'),
+      directory: path.join(__dirname, "dist"),
     },
     compress: true,
     port: 9000,
   },
   performance: {
-    hints: false
-  }
+    hints: false,
+  },
 };
