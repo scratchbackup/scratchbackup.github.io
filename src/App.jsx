@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Footer } from "./components/Footer/index.jsx";
 import { Header } from "./components/Header/index.jsx";
 import { Layout } from "./components/Layout/index.jsx";
-import { Main } from "./components/Main/index.jsx";
+import { Main } from "./components/Main/index.js";
 class App extends Component {
   constructor(props) {
     super(props);
