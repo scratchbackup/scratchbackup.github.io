@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 const projectSet = require("./ProjectSet");
 const saveProject = require("./save-project");
 const collateProjects = require("./collate-projects");
