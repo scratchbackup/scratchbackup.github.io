@@ -1,5 +1,5 @@
 const projectSet = require("./ProjectSet");
-const saveProject = require("./save-project");
+const saveProject = require("./save-project.mjs");
 const collateProjects = require("./collate-projects");
 
 projectSet.read();
