@@ -1,7 +1,7 @@
 const prettier = require("prettier");
 const fs = require("fs");
 const path = require("path");
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 // The location of the dist directory.
 const DIST_PATH = path.resolve(__dirname, "..", "dist");
