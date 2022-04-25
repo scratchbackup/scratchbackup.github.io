@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Footer } from "./components/Footer.jsx";
-import { Header } from "./components/Header.jsx";
-import { Layout } from "./components/Layout.jsx";
-import { Main } from "./components/Main.jsx";
+import { Footer } from "./components/Footer/index.jsx";
+import { Header } from "./components/Header/index.jsx";
+import { Layout } from "./components/Layout/index.jsx";
+import { Main } from "./components/Main/index.jsx";
 class App extends Component {
   constructor(props) {
     super(props);
