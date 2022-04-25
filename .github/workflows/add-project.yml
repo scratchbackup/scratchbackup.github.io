@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Run add-project.js
+      - name: Run add-project.mjs
         run: |
           yarn add-project ${{ github.event.inputs.project-id }}
 
