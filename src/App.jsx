@@ -195,7 +195,7 @@ class App extends Component {
   }
 }
 
-export { App };
+export { App }; /*
             ScratchBackup is a tool that automatically pulls your code every 30
             minutes and publishes it to GitHub.
           </p>
@@ -374,14 +374,4 @@ export { App };
               rel="noopener noreferrer"
               href="https://github.com/scratchbackup/scratchbackup.github.io"
             >
-              GitHub
-            </a>
-            .
-          </p>
-        </Footer>
-      </Layout>
-    );
-  }
-}
-
-export { App };
+              GitHub */
