@@ -28,7 +28,7 @@ class App extends Component {
   render() {
     const projects = this.state.projects
       .filter((project) =>
-        project.title
+        fetch(`./projects/${project}/metadata.json`)
           .toLowerCase()
           .includes(this.state.nameSearch.toLowerCase())
       )
@@ -101,7 +101,7 @@ class App extends Component {
                   </tr>
                 )}
                 {
-                  projects.map((project) => {
+                  projects.map(function(){fetch(`./projects/${project}/metadata.json`} => (project)) => {
                     const created = new Date(project.created);
                     const modified = new Date(project.modified);
                     const author = project.author;
